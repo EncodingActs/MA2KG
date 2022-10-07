@@ -23,5 +23,5 @@ This folder contains the technical details with ready-to-use scripts for re-prod
 
 ### Documentation
 
-### doc
+#### /doc
 This folder contains the ontology documentation, descriptive of the classes and properties.
