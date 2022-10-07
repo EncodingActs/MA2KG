@@ -1,0 +1,44 @@
+PREFIX neo: <neo4j://voc#> 
+CONSTRUCT {
+  # personal biography (attribute)
+  ?person a neo:master .
+  ?person neo:personZHName ?personZHName .
+  ?person neo:personENName ?personENName .
+  ?person neo:hasGender ?personGenderLabel .
+  ?person neo:birthDate ?personBirthDate .
+  ?person neo:deathDate ?personDeathDate .
+  
+  # personal biography (relation)
+  ?person neo:is_citizen_of ?personCitizenPlace .
+  ?personCitizenPlace a neo:place .
+  ?personCitizenPlace neo:placeENName ?personCitizenPlaceLabel .
+  ?person neo:born_in ?personBirthPlace .
+  ?personBirthPlace a neo:place .
+  ?personBirthPlace neo:placeENName ?personBirthPlaceLabel .
+  ?person neo:die_in ?personDeathPlace .
+  ?personDeathPlace a neo:place .
+  ?personDeathPlace neo:placeENName ?personDeathPlaceLabel .
+  ?person neo:work_as ?personOccupation .
+  ?personOccupation a neo:occupation .
+  ?personOccupation neo:occupationName ?personOccupationLabel .
+  ?person neo:reside_in ?personResidence .
+  ?personResidence a neo:place .
+  ?personResidence neo:placeENName ?personResidenceLabel .
+}
+WHERE 
+{
+  VALUES ?person {wd:Q3633014 wd:Q3633016}
+  OPTIONAL {?person rdfs:label ?personZHName . filter(lang(?personZHName) = "zh")} # zh name
+  OPTIONAL {?person rdfs:label ?personENName . filter(lang(?personENName) = "en")} # en name
+  OPTIONAL {?person wdt:P21 ?personGender .}                                       # gender
+  OPTIONAL {?person wdt:P569 ?personBirthDate .}                                   # birth date
+  OPTIONAL {?person wdt:P570 ?personDeathDate .}                                   # death date
+  OPTIONAL {?person wdt:P19 ?personBirthPlace .}                                   # birth place
+  OPTIONAL {?person wdt:P20 ?personDeathPlace .}                                   # death place
+  OPTIONAL {?person wdt:P27 ?personCitizenPlace .}                                 # citizen place
+  OPTIONAL {?person wdt:P551 ?personResidence .}                                   # residence place
+  OPTIONAL {?person wdt:P106 ?personOccupation .}                                  # occupation
+  
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "en" .}
+  
+}

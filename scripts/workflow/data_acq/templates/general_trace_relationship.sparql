@@ -1,0 +1,124 @@
+PREFIX neo: <neo4j://voc#> 
+CONSTRUCT {
+  # personal biography (attribute)
+  ?person a neo:$className .
+  ?person neo:personZHName ?personZHName .
+  ?person neo:personENName ?personENName .
+  ?person neo:hasGender ?personGenderLabel .
+  ?person neo:birthDate ?personBirthDate .
+  ?person neo:deathDate ?personDeathDate .
+  
+  # personal biography (relation)
+  ?person neo:is_citizen_of ?personCitizenPlace .
+  ?personCitizenPlace a neo:place .
+  ?personCitizenPlace neo:placeENName ?personCitizenPlaceLabel .
+  ?person neo:born_in ?personBirthPlace .
+  ?personBirthPlace a neo:place .
+  ?personBirthPlace neo:placeENName ?personBirthPlaceLabel .
+  ?person neo:die_in ?personDeathPlace .
+  ?personDeathPlace a neo:place .
+  ?personDeathPlace neo:placeENName ?personDeathPlaceLabel .
+  ?person neo:work_as ?personOccupation .
+  ?personOccupation a neo:occupation .
+  ?personOccupation neo:occupationName ?personOccupationLabel .
+  ?person neo:reside_in ?personResidence .
+  ?personResidence a neo:place .
+  ?personResidence neo:placeENName ?personResidenceLabel .
+  
+  # master biography
+  ?master a neo:$className .
+  ?master neo:personZHName ?masterZHName .
+  ?master neo:personENName ?masterENName .
+  ?master neo:hasGender ?masterGenderLabel .
+  ?master neo:birthDate ?masterBirthDate .
+  ?master neo:deathDate ?masterDeathDate .
+  
+  ?master neo:is_citizen_of ?masterCitizenPlace .
+  ?masterCitizenPlace a neo:place .
+  ?masterCitizenPlace neo:placeENName ?masterCitizenPlaceLabel .
+  ?master neo:born_in ?masterBirthPlace .
+  ?masterBirthPlace a neo:place .
+  ?masterBirthPlace neo:placeENName ?masterBirthPlaceLabel .
+  ?master neo:die_in ?masterDeathPlace .
+  ?masterDeathPlace a neo:place .
+  ?masterDeathPlace neo:placeENName ?masterDeathPlaceLabel .
+  ?master neo:work_as ?masterOccupation .
+  ?masterOccupation a neo:occupation .
+  ?masterOccupation neo:occupationName ?masterOccupationLabel .
+  ?master neo:reside_in ?masterResidence .
+  ?masterResidence a neo:place .
+  ?masterResidence neo:placeENName ?masterResidenceLabel .
+    
+  # student biography
+  ?student a neo:$className .
+  ?student neo:personZHName ?studentZHName .
+  ?student neo:personENName ?studentENName .
+  ?student neo:hasGender ?studentGenderLabel .
+  ?student neo:birthDate ?studentBirthDate .
+  ?student neo:deathDate ?studentDeathDate .
+  
+  ?student neo:is_citizen_of ?studentCitizenPlace .
+  ?studentCitizenPlace a neo:place .
+  ?studentCitizenPlace neo:placeENName ?studentCitizenPlaceLabel .
+  ?student neo:born_in ?studentBirthPlace .
+  ?studentBirthPlace a neo:place .
+  ?studentBirthPlace neo:placeENName ?studentBirthPlaceLabel .
+  ?student neo:die_in ?studentDeathPlace .
+  ?studentDeathPlace a neo:place .
+  ?studentDeathPlace neo:placeENName ?studentDeathPlaceLabel .
+  ?student neo:work_as ?studentOccupation .
+  ?studentOccupation a neo:occupation .
+  ?studentOccupation neo:occupationName ?studentOccupationLabel .
+  ?student neo:reside_in ?studentResidence .
+  ?studentResidence a neo:place .
+  ?studentResidence neo:placeENName ?studentResidenceLabel .
+  
+  # =============================================================
+
+
+  # personal relationship
+  ?person neo:is_student_of ?master .
+  ?person neo:is_master_of ?student .
+}
+WHERE 
+{
+  ?person (wdt:P802|wdt:P1066)* wd:$personId . # change the entity here to scrape more masters
+  ?person wdt:P802 ?student .
+  ?person wdt:P1066 ?master .
+  
+  OPTIONAL {?person rdfs:label ?personZHName . filter(lang(?personZHName) = "zh")} # zh name
+  OPTIONAL {?person rdfs:label ?personENName . filter(lang(?personENName) = "en")} # en name
+  OPTIONAL {?person wdt:P21 ?personGender .}                                       # gender
+  OPTIONAL {?person wdt:P569 ?personBirthDate .}                                   # birth date
+  OPTIONAL {?person wdt:P570 ?personDeathDate .}                                   # death date
+  OPTIONAL {?person wdt:P19 ?personBirthPlace .}                                   # birth place
+  OPTIONAL {?person wdt:P20 ?personDeathPlace .}                                   # death place
+  OPTIONAL {?person wdt:P27 ?personCitizenPlace .}                                 # citizen place
+  OPTIONAL {?person wdt:P551 ?personResidence .}                                   # residence place
+  OPTIONAL {?person wdt:P106 ?personOccupation .}                                  # occupation
+  
+  OPTIONAL {?master rdfs:label ?masterZHName . filter(lang(?masterZHName) = "zh")}
+  OPTIONAL {?master rdfs:label ?masterENName . filter(lang(?masterENName) = "en")}
+  OPTIONAL {?master wdt:P21 ?masterGender .}                                       # gender
+  OPTIONAL {?master wdt:P569 ?masterBirthDate .}                                   # birth date
+  OPTIONAL {?master wdt:P570 ?masterDeathDate .}                                   # death date
+  OPTIONAL {?master wdt:P19 ?masterBirthPlace .}                                   # birth place
+  OPTIONAL {?master wdt:P20 ?masterDeathPlace .}                                   # death place
+  OPTIONAL {?master wdt:P27 ?masterCitizenPlace .}                                 # citizen place
+  OPTIONAL {?master wdt:P551 ?masterResidence .}                                   # residence place
+  OPTIONAL {?master wdt:P106 ?masterOccupation .}                                  # occupation
+  
+  OPTIONAL {?student rdfs:label ?studentZHName . filter(lang(?studentZHName) = "zh")}
+  OPTIONAL {?student rdfs:label ?studentENName . filter(lang(?studentENName) = "en")}
+  OPTIONAL {?student wdt:P21 ?studentGender .}                                       # gender
+  OPTIONAL {?student wdt:P569 ?studentBirthDate .}                                   # birth date
+  OPTIONAL {?student wdt:P570 ?studentDeathDate .}                                   # death date
+  OPTIONAL {?student wdt:P19 ?studentBirthPlace .}                                   # birth place
+  OPTIONAL {?student wdt:P20 ?studentDeathPlace .}                                   # death place
+  OPTIONAL {?student wdt:P27 ?studentCitizenPlace .}                                 # citizen place
+  OPTIONAL {?student wdt:P551 ?studentResidence .}                                   # residence place
+  OPTIONAL {?student wdt:P106 ?studentOccupation .}                                  # occupation
+  
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "en" .}
+  
+}
