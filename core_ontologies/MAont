@@ -1,4 +1,4 @@
-@prefix : <http://EncodingActs.github.io/MAont/MAont_base/#> .
+@prefix : <http://EncodingActs.github.io/MAont/MAont_base/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,10 +7,14 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix MA_ont: <http://EncodingActs.github.io/MAont/MAont_base/#> .
 @prefix ontologies: <http://www.semanticweb.org/yumeng/ontologies/2021/> .
-@prefix webprotege: <http://webprotege.stanford.edu/> .
-@base <http://EncodingActs.github.io/MAont/MAont_base/> .
+@prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
+@base <http://EncodingActs.github.io/MAont/MAont_base> .
 
-<http://EncodingActs.github.io/MAont/MAont_base/> rdf:type owl:Ontology .
+<http://EncodingActs.github.io/MAont/MAont_base/> rdf:type owl:Ontology ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+                                                dct:creator <https://orcid.org/0000-0002-7908-0693> ;
+                                                dct:title "The Martial Arts ontology: Master Module" ;
+                                                rdfs:comment "This ontological module is to describe the Martial Arts Masters and is extended from the Martial Arts ontology created by CROSSINGS."@en .
 
 #################################################################
 #    Annotation properties
