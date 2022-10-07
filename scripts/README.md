@@ -46,10 +46,6 @@
 
 Sources record different forms of the related work, data and so on. Each item is briefly commented for later reference.
 
-### Research paper
-
-- ​
-
 
 ### Data sources
 
@@ -87,7 +83,7 @@ Sources record different forms of the related work, data and so on. Each item is
 
 
 
-### Toolkits
+### Toolkits used
 
 - [neosemantics](https://neo4j.com/labs/neosemantics/4.0/)
   a plugin that enables the use of RDF in Neo4j
