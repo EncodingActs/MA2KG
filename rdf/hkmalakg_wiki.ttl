@@ -8,7 +8,7 @@
 @prefix webprotege: <http://webprotege.stanford.edu/> .
 @prefix hkmalakg-wiki: <http://EncodingActs.github.io/annotated/hkmalakg_wiki#> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
-@base <http://EncodingActs.github.io/annotated/hkmalakg_wiki.ttl> .
+@base <http://EncodingActs.github.io/annotated/hkmalakg_wiki> .
 
 <http://EncodingActs.github.io/annotated/hkmalakg_wiki> rdf:type owl:Ontology ;
                                                                    owl:imports <http://EncodingActs.github.io/MAont/hkmalakg> .
