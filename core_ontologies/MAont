@@ -1,0 +1,760 @@
+@prefix : <http://EncodingActs.github.io/MAont/MAont_base/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix MA_ont: <http://EncodingActs.github.io/MAont/MAont_base/#> .
+@prefix ontologies: <http://www.semanticweb.org/yumeng/ontologies/2021/> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@base <http://EncodingActs.github.io/MAont/MAont_base/> .
+
+<http://EncodingActs.github.io/MAont/MAont_base/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/R74ow6yPCZPD4vtpi3QDa4w
+ontologies:R74ow6yPCZPD4vtpi3QDa4w rdf:type owl:AnnotationProperty ;
+                                   rdfs:label "name_zhHK" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/R8OXEMXEijagfmfI7ML4NAd
+ontologies:R8OXEMXEijagfmfI7ML4NAd rdf:type owl:AnnotationProperty ;
+                                   rdfs:label "BaiduURL" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/RBHerklKTaYgkmZ3SWdQTsn
+ontologies:RBHerklKTaYgkmZ3SWdQTsn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/RDs2xTVp0k0L8mGtMLKamua
+ontologies:RDs2xTVp0k0L8mGtMLKamua rdf:type owl:AnnotationProperty ;
+                                   rdfs:label "otherName_en" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/RZUiYGIowcjlRYxoUBHa7X
+ontologies:RZUiYGIowcjlRYxoUBHa7X rdf:type owl:AnnotationProperty ;
+                                  rdfs:label "otherName_zh" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/Rk6wVMskhiQAbKdrkYKlDF
+ontologies:Rk6wVMskhiQAbKdrkYKlDF rdf:type owl:AnnotationProperty ;
+                                  rdfs:label "wikiURL"^^xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty ;
+           rdfs:label "owl:sameAs" .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/RnAOe7Tteep5RkQr9iYWDK
+ontologies:RnAOe7Tteep5RkQr9iYWDK rdf:type owl:ObjectProperty ;
+                                  rdfs:label "influenced_by" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/belongs_to
+ontologies:belongs_to rdf:type owl:ObjectProperty ;
+                      rdfs:label "belongs_to" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/creates
+ontologies:creates rdf:type owl:ObjectProperty ;
+                   rdfs:label "creates" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/descendant_of
+ontologies:descendant_of rdf:type owl:ObjectProperty ;
+                         rdfs:label "descendant_of"^^xsd:string .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/describes
+ontologies:describes rdf:type owl:ObjectProperty ;
+                     rdfs:label "describes" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/detected_in
+ontologies:detected_in rdf:type owl:ObjectProperty ;
+                       rdfs:label "detected_in" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/documents
+ontologies:documents rdf:type owl:ObjectProperty ;
+                     rdfs:label "documents" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/employs
+ontologies:employs rdf:type owl:ObjectProperty ;
+                   rdfs:label "employs" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/encodes
+ontologies:encodes rdf:type owl:ObjectProperty ;
+                   rdfs:label "encodes" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/has
+ontologies:has rdf:type owl:ObjectProperty ;
+               rdfs:label "has" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/has_feature
+ontologies:has_feature rdf:type owl:ObjectProperty ;
+                       rdfs:label "has_feature" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/has_origin_place
+ontologies:has_origin_place rdf:type owl:ObjectProperty ;
+                            rdfs:label "has_origin_place" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/homologous_with
+ontologies:homologous_with rdf:type owl:ObjectProperty ;
+                           rdfs:label "homologous_with" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/identified_by
+ontologies:identified_by rdf:type owl:ObjectProperty ;
+                         rdfs:label "identified_by" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/is_child_of
+ontologies:is_child_of rdf:type owl:ObjectProperty ;
+                       rdfs:label "is_child_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/is_clan_member_of
+ontologies:is_clan_member_of rdf:type owl:ObjectProperty ;
+                             rdfs:label "is_clan_member_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/is_master_of
+ontologies:is_master_of rdf:type owl:ObjectProperty ;
+                        rdfs:label "is_master_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/is_parent_of
+ontologies:is_parent_of rdf:type owl:ObjectProperty ;
+                        rdfs:label "is_parent_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/is_student_of
+ontologies:is_student_of rdf:type owl:ObjectProperty ;
+                         rdfs:label "is_student_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/lives_in
+ontologies:lives_in rdf:type owl:ObjectProperty ;
+                    rdfs:label "lives_in" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/located_at
+ontologies:located_at rdf:type owl:ObjectProperty ;
+                      rdfs:label "located_at"^^xsd:string .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/part_of
+ontologies:part_of rdf:type owl:ObjectProperty ;
+                   rdfs:label "part_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/performed_by
+ontologies:performed_by rdf:type owl:ObjectProperty ;
+                        rdfs:label "performed_by" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/portrait_of
+ontologies:portrait_of rdf:type owl:ObjectProperty ;
+                       rdfs:label "portrait_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/practiced_in
+ontologies:practiced_in rdf:type owl:ObjectProperty ;
+                        rdfs:label "practiced_in" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/practices
+ontologies:practices rdf:type owl:ObjectProperty ;
+                     rdfs:label "practices" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/recognized_in
+ontologies:recognized_in rdf:type owl:ObjectProperty ;
+                         rdfs:label "recognized_in" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/records
+ontologies:records rdf:type owl:ObjectProperty ;
+                   rdfs:label "records" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/represented_by
+ontologies:represented_by rdf:type owl:ObjectProperty ;
+                          rdfs:label "represented_by" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/requires
+ontologies:requires rdf:type owl:ObjectProperty ;
+                    rdfs:label "requires" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/resides_in
+ontologies:resides_in rdf:type owl:ObjectProperty ;
+                      rdfs:label "resides_in" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/substyle_of
+ontologies:substyle_of rdf:type owl:ObjectProperty ;
+                       rdfs:label "substyle_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/symbolized_by
+ontologies:symbolized_by rdf:type owl:ObjectProperty ;
+                         rdfs:label "symbolized_by" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/taught_at
+ontologies:taught_at rdf:type owl:ObjectProperty ;
+                     rdfs:label "taught_at"^^xsd:string .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/taught_by
+ontologies:taught_by rdf:type owl:ObjectProperty ;
+                     rdfs:label "taught_by"^^xsd:string .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/teaches
+ontologies:teaches rdf:type owl:ObjectProperty ;
+                   rdfs:label "teaches" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/teaches_at
+ontologies:teaches_at rdf:type owl:ObjectProperty ;
+                      rdfs:label "teaches_at" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/title_of
+ontologies:title_of rdf:type owl:ObjectProperty ;
+                    rdfs:label "title_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/trains
+ontologies:trains rdf:type owl:ObjectProperty ;
+                  rdfs:label "trains" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/type_of
+ontologies:type_of rdf:type owl:ObjectProperty ;
+                   rdfs:label "type_of" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/uses
+ontologies:uses rdf:type owl:ObjectProperty ;
+                rdfs:label "uses" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/valid_for
+ontologies:valid_for rdf:type owl:ObjectProperty ;
+                     rdfs:label "valid_for" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/with
+ontologies:with rdf:type owl:ObjectProperty ;
+                rdfs:label "with" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/MAonto_v1
+ontologies:MAonto_v1 rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E21_Person
+ontologies:E21_Person rdf:type owl:Class ;
+                      rdfs:subClassOf owl:Thing ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ontologies:creates ;
+                                        owl:someValuesFrom ontologies:E22_Man-made_object
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ontologies:identified_by ;
+                                        owl:someValuesFrom ontologies:E41_Appellation
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ontologies:lives_in ;
+                                        owl:someValuesFrom ontologies:E52_Time-Span
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ontologies:resides_in ;
+                                        owl:someValuesFrom ontologies:E53_Place
+                                      ] ;
+                      rdfs:label "E21. Person" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E22_Man-made_object
+ontologies:E22_Man-made_object rdf:type owl:Class ;
+                               rdfs:label "E22. Man-made Object" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E25_Human-Made_Feature
+ontologies:E25_Human-Made_Feature rdf:type owl:Class ;
+                                  rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E25_Human-Made_Feature> .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E31_Document
+ontologies:E31_Document rdf:type owl:Class ;
+                        rdfs:subClassOf ontologies:E73_Information_Object ;
+                        rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E31_Document> .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E41_Appellation
+ontologies:E41_Appellation rdf:type owl:Class ;
+                           rdfs:subClassOf ontologies:E90_Symbolic_Object ;
+                           rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E41_Appellation> .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E52_Time-Span
+ontologies:E52_Time-Span rdf:type owl:Class ;
+                         rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E52_Time-Span> .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E53_Place
+ontologies:E53_Place rdf:type owl:Class ;
+                     rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E53_Place> .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E73_Information_Object
+ontologies:E73_Information_Object rdf:type owl:Class ;
+                                  rdfs:label "E73_Information_Object" .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/E90_Symbolic_Object
+ontologies:E90_Symbolic_Object rdf:type owl:Class ;
+                               rdfs:subClassOf ontologies:E73_Information_Object ;
+                               rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E90_Symbolic_Object> .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Armament
+MA_ont:Armament rdf:type owl:Class ;
+                rdfs:subClassOf ontologies:E22_Man-made_object ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom ontologies:E22_Man-made_object
+                                ] ;
+                rdfs:label "Armament"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#E28_Conceptual_Object
+MA_ont:E28_Conceptual_Object rdf:type owl:Class ;
+                             rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#E7_Activity
+MA_ont:E7_Activity rdf:type owl:Class ;
+                   rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E7_Activity> .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Fundamental
+MA_ont:Fundamental rdf:type owl:Class ;
+                   rdfs:subClassOf MA_ont:MA_Technique ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ontologies:represented_by ;
+                                     owl:someValuesFrom ontologies:E25_Human-Made_Feature
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ontologies:type_of ;
+                                     owl:someValuesFrom MA_ont:MA_Technique
+                                   ] ;
+                   rdfs:label "Fundamental_technique"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Gading_sys
+MA_ont:Gading_sys rdf:type owl:Class ;
+                  rdfs:subClassOf ontologies:E73_Information_Object ;
+                  rdfs:label "Grading_system"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Image
+MA_ont:Image rdf:type owl:Class ;
+             rdfs:subClassOf ontologies:E73_Information_Object ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:portrait_of ;
+                               owl:someValuesFrom MA_ont:Master
+                             ] ;
+             rdfs:label "Image" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Jin
+MA_ont:Jin rdf:type owl:Class ;
+           rdfs:subClassOf MA_ont:Fundamental ;
+           rdfs:comment "the physical strength and quality of force" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_Technique
+MA_ont:MA_Technique rdf:type owl:Class ;
+                    rdfs:subClassOf MA_ont:P33_used_specific_technique ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:employs ;
+                                      owl:someValuesFrom MA_ont:bodytech
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:employs ;
+                                      owl:someValuesFrom MA_ont:footwork
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:employs ;
+                                      owl:someValuesFrom MA_ont:handwork
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:homologous_with ;
+                                      owl:someValuesFrom MA_ont:MA_Technique
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:practiced_in ;
+                                      owl:someValuesFrom MA_ont:MA_taolu
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:symbolized_by ;
+                                      owl:someValuesFrom ontologies:E90_Symbolic_Object
+                                    ] ;
+                    rdfs:label "MA_Technique" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_book
+MA_ont:MA_book rdf:type owl:Class ;
+               rdfs:subClassOf ontologies:E31_Document ;
+               rdfs:label "MA_book"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_institute
+MA_ont:MA_institute rdf:type owl:Class .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_style
+MA_ont:MA_style rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:belongs_to ;
+                                  owl:someValuesFrom MA_ont:MA_system
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:descendant_of ;
+                                  owl:someValuesFrom MA_ont:MA_style
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:has ;
+                                  owl:someValuesFrom MA_ont:MA_Technique
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:has ;
+                                  owl:someValuesFrom MA_ont:MA_taolu
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:has_origin_place ;
+                                  owl:someValuesFrom ontologies:E53_Place
+                                ] ;
+                rdfs:label "MA_style"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_syllabus
+MA_ont:MA_syllabus rdf:type owl:Class ;
+                   rdfs:subClassOf ontologies:E73_Information_Object ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ontologies:employs ;
+                                     owl:someValuesFrom MA_ont:MA_training_method
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ontologies:valid_for ;
+                                     owl:someValuesFrom MA_ont:Gading_sys
+                                   ] ;
+                   rdfs:label "MA_syllabus"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_system
+MA_ont:MA_system rdf:type owl:Class ;
+                 rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ontologies:has_origin_place ;
+                                   owl:someValuesFrom ontologies:E53_Place
+                                 ] ;
+                 rdfs:label <http://semanticweb.org/ont/martialmotion#MA_system> .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_taolu
+MA_ont:MA_taolu rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:MA_training_method ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:practiced_in ;
+                                  owl:someValuesFrom MA_ont:MA_style
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom ontologies:E73_Information_Object
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom MA_ont:MA_training_method
+                                ] ;
+                rdfs:label "Taolu"^^xsd:string ;
+                skos:altLabel "Kata"@ja ,
+                              "form"@en .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_training_method
+MA_ont:MA_training_method rdf:type owl:Class ;
+                          rdfs:subClassOf owl:Thing ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty ontologies:employs ;
+                                            owl:someValuesFrom MA_ont:Armament
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty ontologies:employs ;
+                                            owl:someValuesFrom MA_ont:Training_tool
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty ontologies:part_of ;
+                                            owl:someValuesFrom MA_ont:MA_syllabus
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty ontologies:trains ;
+                                            owl:someValuesFrom MA_ont:MA_Technique
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty ontologies:uses ;
+                                            owl:someValuesFrom MA_ont:MA_book
+                                          ] ;
+                          rdfs:label "Training_method"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Martial_arts
+MA_ont:Martial_arts rdf:type owl:Class ;
+                    rdfs:subClassOf MA_ont:E7_Activity ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:has ;
+                                      owl:someValuesFrom MA_ont:MA_Technique
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:has ;
+                                      owl:someValuesFrom MA_ont:MA_style
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:has ;
+                                      owl:someValuesFrom MA_ont:MA_syllabus
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:has ;
+                                      owl:someValuesFrom MA_ont:MA_system
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:taught_at ;
+                                      owl:someValuesFrom MA_ont:MA_institute
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontologies:taught_by ;
+                                      owl:someValuesFrom MA_ont:Master
+                                    ] ;
+                    rdfs:label "Martial_arts" ;
+                    skos:altLabel "國術"@zh-hk ,
+                                  "武术"@zh-cn .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Master
+MA_ont:Master rdf:type owl:Class ;
+              rdfs:subClassOf ontologies:E21_Person ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:creates ;
+                                owl:someValuesFrom MA_ont:Armament
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:creates ;
+                                owl:someValuesFrom MA_ont:MA_Technique
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:creates ;
+                                owl:someValuesFrom MA_ont:MA_training_method
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:creates ;
+                                owl:someValuesFrom MA_ont:Training_tool
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:is_child_of ;
+                                owl:someValuesFrom MA_ont:Master
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:is_clan_member_of ;
+                                owl:someValuesFrom MA_ont:Master
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:is_master_of ;
+                                owl:someValuesFrom MA_ont:Master
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:is_parent_of ;
+                                owl:someValuesFrom MA_ont:Master
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:is_student_of ;
+                                owl:someValuesFrom MA_ont:Master
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:practices ;
+                                owl:someValuesFrom MA_ont:MA_style
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:practices ;
+                                owl:someValuesFrom MA_ont:Martial_arts
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:teaches ;
+                                owl:someValuesFrom MA_ont:MA_training_method
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:teaches_at ;
+                                owl:someValuesFrom MA_ont:MA_institute
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:title_of ;
+                                owl:someValuesFrom ontologies:E21_Person
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty ontologies:uses ;
+                                owl:someValuesFrom MA_ont:Armament
+                              ] ;
+              rdfs:label <http://semanticweb.org/ont/martialmotion#Master> ,
+                         "MA_master"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MoCap
+MA_ont:MoCap rdf:type owl:Class ;
+             rdfs:subClassOf ontologies:E31_Document ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:performed_by ;
+                               owl:someValuesFrom MA_ont:Master
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:records ;
+                               owl:someValuesFrom MA_ont:MA_Technique
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:records ;
+                               owl:someValuesFrom MA_ont:MA_style
+                             ] ;
+             rdfs:label "Motion_capture" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#P33_used_specific_technique
+MA_ont:P33_used_specific_technique rdf:type owl:Class ;
+                                   rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/P33_used_specific_technique> .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Sparring
+MA_ont:Sparring rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:MA_training_method .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Strength_training
+MA_ont:Strength_training rdf:type owl:Class ;
+                         rdfs:subClassOf MA_ont:MA_training_method ;
+                         rdfs:label "Strength_training" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Texts
+MA_ont:Texts rdf:type owl:Class ;
+             rdfs:subClassOf ontologies:E31_Document ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:describes ;
+                               owl:someValuesFrom MA_ont:Master
+                             ] ;
+             rdfs:label "Text_doc" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Training_tool
+MA_ont:Training_tool rdf:type owl:Class ;
+                     rdfs:subClassOf ontologies:E22_Man-made_object ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty ontologies:type_of ;
+                                       owl:someValuesFrom ontologies:E22_Man-made_object
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty ontologies:type_of ;
+                                       owl:someValuesFrom MA_ont:Armament
+                                     ] ;
+                     rdfs:label "Trainig_tool"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Video
+MA_ont:Video rdf:type owl:Class ;
+             rdfs:subClassOf ontologies:E31_Document ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:performed_by ;
+                               owl:someValuesFrom MA_ont:Master
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:records ;
+                               owl:someValuesFrom MA_ont:MA_Technique
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ontologies:records ;
+                               owl:someValuesFrom MA_ont:MA_style
+                             ] ;
+             rdfs:label "Video" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#bodytech
+MA_ont:bodytech rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:Fundamental ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom MA_ont:Fundamental
+                                ] ;
+                rdfs:label "Body_tech"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#footwork
+MA_ont:footwork rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:Fundamental ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom MA_ont:Fundamental
+                                ] ;
+                rdfs:label "Footwork" .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#handwork
+MA_ont:handwork rdf:type owl:Class ;
+                rdfs:subClassOf MA_ont:Fundamental ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ontologies:type_of ;
+                                  owl:someValuesFrom MA_ont:Fundamental
+                                ] ;
+                rdfs:label "Handwork"^^xsd:string .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#ymH_metamotion
+MA_ont:ymH_metamotion rdf:type owl:Class ;
+                      rdfs:subClassOf ontologies:E25_Human-Made_Feature ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ontologies:encodes ;
+                                        owl:someValuesFrom MA_ont:Fundamental
+                                      ] ;
+                      rdfs:label "metamotion"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

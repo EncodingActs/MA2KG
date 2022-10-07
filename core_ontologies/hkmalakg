@@ -1,0 +1,657 @@
+@prefix : <http://EncodingActs.github.io/MAont/hkmalakg/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix MA_ont: <http://EncodingActs.github.io/MAont/MAont_base/#> .
+@prefix hkmalakg: <http://EncodingActs.github.io/MAont/hkmalakg/#> .
+@prefix ontologies: <http://www.semanticweb.org/yumeng/ontologies/2021/> .
+@prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
+@base <http://EncodingActs.github.io/MAont/hkmalakg/> .
+
+<http://EncodingActs.github.io/MAont/hkmalakg/> rdf:type owl:Ontology ;
+                                                              owl:imports ontologies:MA_ont .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://semanticweb.org/ont/martialmotion#adopts
+martialmotion:adopts rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#competes_in
+martialmotion:competes_in rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain martialmotion:Master ;
+                          rdfs:range martialmotion:MA_Community .
+
+
+###  http://semanticweb.org/ont/martialmotion#created_by
+martialmotion:created_by rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain martialmotion:MA_style ,
+                                     martialmotion:Weapon ;
+                         rdfs:range martialmotion:MA_Community ,
+                                    martialmotion:Master .
+
+
+###  http://semanticweb.org/ont/martialmotion#employs
+martialmotion:employs rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdf:type owl:AsymmetricProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#fights_with
+martialmotion:fights_with rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdf:type owl:SymmetricProperty ,
+                                   owl:IrreflexiveProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#founded_by
+martialmotion:founded_by rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdf:type owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain martialmotion:MA_Community ,
+                                     hkmalakg:Site ;
+                         rdfs:range martialmotion:MA_Community ,
+                                    martialmotion:Master .
+
+
+###  http://semanticweb.org/ont/martialmotion#has_origin_in
+martialmotion:has_origin_in rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#has_parent
+martialmotion:has_parent rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         owl:inverseOf martialmotion:is_parent_of ;
+                         rdf:type owl:TransitiveProperty ;
+                         rdfs:domain martialmotion:Master ;
+                         rdfs:range martialmotion:Master .
+
+
+###  http://semanticweb.org/ont/martialmotion#has_place_of_birth
+martialmotion:has_place_of_birth rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#has_residence
+martialmotion:has_residence rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#is_parent_of
+martialmotion:is_parent_of rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdf:type owl:TransitiveProperty ,
+                                    owl:IrreflexiveProperty ;
+                           rdfs:domain martialmotion:Master ;
+                           rdfs:range martialmotion:Master .
+
+
+###  http://semanticweb.org/ont/martialmotion#is_relative_of
+martialmotion:is_relative_of rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdf:type owl:SymmetricProperty ,
+                                      owl:TransitiveProperty ,
+                                      owl:IrreflexiveProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#master_of
+martialmotion:master_of rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#popular_in
+martialmotion:popular_in rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#practiced_in
+martialmotion:practiced_in rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#practices
+martialmotion:practices rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain martialmotion:Master ;
+                        rdfs:range martialmotion:MA_style ,
+                                   martialmotion:MA_system .
+
+
+###  http://semanticweb.org/ont/martialmotion#re-created_by
+martialmotion:re-created_by rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#represented_by
+martialmotion:represented_by rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#requires
+martialmotion:requires rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#similar_to
+martialmotion:similar_to rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#taught_at
+martialmotion:taught_at rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://semanticweb.org/ont/martialmotion#teaches
+martialmotion:teaches rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain martialmotion:Master ;
+                      rdfs:range martialmotion:MA_style .
+
+
+###  http://semanticweb.org/ont/martialmotion#valid_for
+martialmotion:valid_for rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#belongs_to_system
+hkmalakg:belongs_to_system rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           owl:inverseOf hkmalakg:has_style ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:domain martialmotion:MA_style ;
+                           rdfs:range martialmotion:MA_system .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#has_style
+hkmalakg:has_style rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain martialmotion:MA_system ;
+                   rdfs:range martialmotion:MA_style .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#hyperStyle_of
+hkmalakg:hyperStyle_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       owl:inverseOf hkmalakg:subStyle_of ;
+                       rdf:type owl:TransitiveProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain martialmotion:MA_style ;
+                       rdfs:range martialmotion:MA_style .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#hyperSystem_of
+hkmalakg:hyperSystem_of rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        owl:inverseOf hkmalakg:subSystem_of ;
+                        rdf:type owl:TransitiveProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain martialmotion:MA_system ;
+                        rdfs:range martialmotion:MA_system .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#is_master_of
+hkmalakg:is_master_of rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      owl:inverseOf hkmalakg:is_student_of ;
+                      rdf:type owl:TransitiveProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain martialmotion:Master ;
+                      rdfs:range martialmotion:Master .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#is_student_of
+hkmalakg:is_student_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:TransitiveProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain martialmotion:Master ;
+                       rdfs:range martialmotion:MA_Community ,
+                                  martialmotion:Master .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#locates_in
+hkmalakg:locates_in rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:TransitiveProperty ;
+                    rdfs:domain martialmotion:MA_Community ,
+                                hkmalakg:Site ;
+                    rdfs:range martialmotion:Region ,
+                               hkmalakg:City .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#resides_in
+hkmalakg:resides_in rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain martialmotion:Master ;
+                    rdfs:range martialmotion:Region ,
+                               hkmalakg:City ,
+                               hkmalakg:Site .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#subStyle_of
+hkmalakg:subStyle_of rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:FunctionalProperty ,
+                              owl:TransitiveProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain martialmotion:MA_style ;
+                     rdfs:range martialmotion:MA_style .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#subSystem_of
+hkmalakg:subSystem_of rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdf:type owl:FunctionalProperty ,
+                               owl:TransitiveProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain martialmotion:MA_system ;
+                      rdfs:range martialmotion:MA_system .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#sworn_brothers
+hkmalakg:sworn_brothers rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#uses
+hkmalakg:uses rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:ObjectProperty ,
+                               owl:SymmetricProperty ,
+                               owl:IrreflexiveProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_family_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_family_name> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> ;
+                                                                                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_first_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_first_name> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_middle_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_middle_name> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf hkmalakg:personAppelation ;
+                                                                                 rdfs:range xsd:Name ,
+                                                                                            xsd:string .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#art_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#art_name> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf hkmalakg:personAppelation .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#family_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#family_name> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf hkmalakg:full_name .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#first_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#first_name> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf hkmalakg:full_name .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#middle_name
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#middle_name> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf hkmalakg:full_name .
+
+
+###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#name_language
+<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#name_language> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf hkmalakg:full_name ;
+                                                                                       rdfs:range xsd:language .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#featureID
+hkmalakg:featureID rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#fileDescription
+hkmalakg:fileDescription rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#filePath
+hkmalakg:filePath rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#fileProduceDate
+hkmalakg:fileProduceDate rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#fileProducer
+hkmalakg:fileProducer rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#full_name
+hkmalakg:full_name rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf hkmalakg:personAppelation .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personAppelation
+hkmalakg:personAppelation rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personBiography
+hkmalakg:personBiography rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personBirthday
+hkmalakg:personBirthday rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personBirthplace
+hkmalakg:personBirthplace rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personDeathday
+hkmalakg:personDeathday rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#personGender
+hkmalakg:personGender rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#placeDescription
+hkmalakg:placeDescription rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#placeENName
+hkmalakg:placeENName rdf:type owl:DatatypeProperty .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#placeLocation
+hkmalakg:placeLocation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain martialmotion:Master ;
+                    rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://semanticweb.org/ont/martialmotion#Armour
+martialmotion:Armour rdf:type owl:Class ;
+                     rdfs:subClassOf martialmotion:Defensive_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Axe
+martialmotion:Axe rdf:type owl:Class ;
+                  rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Ballistic_knife
+martialmotion:Ballistic_knife rdf:type owl:Class ;
+                              rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Bladed_weapon
+martialmotion:Bladed_weapon rdf:type owl:Class ;
+                            rdfs:subClassOf martialmotion:Melee_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Blowgun
+martialmotion:Blowgun rdf:type owl:Class ;
+                      rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Blunt_weapon
+martialmotion:Blunt_weapon rdf:type owl:Class ;
+                           rdfs:subClassOf martialmotion:Melee_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Bow
+martialmotion:Bow rdf:type owl:Class ;
+                  rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Chain_weapon
+martialmotion:Chain_weapon rdf:type owl:Class ;
+                           rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Chakram
+martialmotion:Chakram rdf:type owl:Class ;
+                      rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Crossbow
+martialmotion:Crossbow rdf:type owl:Class ;
+                       rdfs:subClassOf martialmotion:Bow .
+
+
+###  http://semanticweb.org/ont/martialmotion#Dagger
+martialmotion:Dagger rdf:type owl:Class ;
+                     rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Defensive_weapon
+martialmotion:Defensive_weapon rdf:type owl:Class ;
+                               rdfs:subClassOf martialmotion:Weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Flexible_weapon
+martialmotion:Flexible_weapon rdf:type owl:Class ;
+                              rdfs:subClassOf martialmotion:Weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Guandao
+martialmotion:Guandao rdf:type owl:Class ;
+                      rdfs:subClassOf martialmotion:Polearms .
+
+
+###  http://semanticweb.org/ont/martialmotion#Halberd
+martialmotion:Halberd rdf:type owl:Class ;
+                      rdfs:subClassOf martialmotion:Polearms .
+
+
+###  http://semanticweb.org/ont/martialmotion#Kama
+martialmotion:Kama rdf:type owl:Class ;
+                   rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Knife
+martialmotion:Knife rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#MA_Community
+martialmotion:MA_Community rdf:type owl:Class ;
+                           rdfs:comment "A Martial Arts (MA) Community represents collective social agents where the transmission of  martial arts taking place, e.g. a school, clan, sect or sports federation." .
+
+
+###  http://semanticweb.org/ont/martialmotion#MA_style
+martialmotion:MA_style rdf:type owl:Class ;
+                       owl:equivalentClass MA_ont:MA_style ;
+                       rdfs:subClassOf MA_ont:E28_Conceptual_Object ;
+                       rdfs:label "Style" .
+
+
+###  http://semanticweb.org/ont/martialmotion#MA_system
+martialmotion:MA_system rdf:type owl:Class ;
+                        owl:equivalentClass MA_ont:MA_system ;
+                        rdfs:subClassOf MA_ont:E28_Conceptual_Object ;
+                        rdfs:label "System" .
+
+
+###  http://semanticweb.org/ont/martialmotion#Master
+martialmotion:Master rdf:type owl:Class ;
+                     owl:equivalentClass MA_ont:Master ;
+                     rdfs:subClassOf ontologies:E21_Person .
+
+
+###  http://semanticweb.org/ont/martialmotion#Melee_weapon
+martialmotion:Melee_weapon rdf:type owl:Class ;
+                           rdfs:subClassOf martialmotion:Weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Nunchaku
+martialmotion:Nunchaku rdf:type owl:Class ;
+                       rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Polearms
+martialmotion:Polearms rdf:type owl:Class ;
+                       rdfs:subClassOf martialmotion:Melee_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Ranged_weapon
+martialmotion:Ranged_weapon rdf:type owl:Class ;
+                            rdfs:subClassOf martialmotion:Weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Region
+martialmotion:Region rdf:type owl:Class ;
+                     rdfs:subClassOf ontologies:E53_Place ;
+                     owl:disjointWith hkmalakg:Site .
+
+
+###  http://semanticweb.org/ont/martialmotion#Rope
+martialmotion:Rope rdf:type owl:Class ;
+                   rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Shield
+martialmotion:Shield rdf:type owl:Class ;
+                     rdfs:subClassOf martialmotion:Armour .
+
+
+###  http://semanticweb.org/ont/martialmotion#Shuriken
+martialmotion:Shuriken rdf:type owl:Class ;
+                       rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Sickle
+martialmotion:Sickle rdf:type owl:Class ;
+                     rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Slapjack
+martialmotion:Slapjack rdf:type owl:Class ;
+                       rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Sling
+martialmotion:Sling rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Spear
+martialmotion:Spear rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Polearms .
+
+
+###  http://semanticweb.org/ont/martialmotion#Staff
+martialmotion:Staff rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Blunt_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Sword
+martialmotion:Sword rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Tabak-Toyok
+martialmotion:Tabak-Toyok rdf:type owl:Class ;
+                          rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Taser
+martialmotion:Taser rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Ranged_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Tonfa
+martialmotion:Tonfa rdf:type owl:Class ;
+                    rdfs:subClassOf martialmotion:Blunt_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#War_hammer
+martialmotion:War_hammer rdf:type owl:Class ;
+                         rdfs:subClassOf martialmotion:Bladed_weapon .
+
+
+###  http://semanticweb.org/ont/martialmotion#Weapon
+martialmotion:Weapon rdf:type owl:Class ;
+                     rdfs:subClassOf MA_ont:Armament .
+
+
+###  http://semanticweb.org/ont/martialmotion#Whip
+martialmotion:Whip rdf:type owl:Class ;
+                   rdfs:subClassOf martialmotion:Flexible_weapon .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_institute
+MA_ont:MA_institute owl:equivalentClass hkmalakg:School_and_Club ;
+                    rdfs:subClassOf martialmotion:MA_Community .
+
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_style
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#MA_system
+
+###  http://EncodingActs.github.io/MAont/MAont_base/#Master
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#Association
+hkmalakg:Association rdf:type owl:Class ;
+                     rdfs:subClassOf martialmotion:MA_Community .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#City
+hkmalakg:City rdf:type owl:Class ;
+              rdfs:subClassOf ontologies:E53_Place ;
+              owl:disjointWith hkmalakg:Site .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#Clan
+hkmalakg:Clan rdf:type owl:Class ;
+              rdfs:subClassOf martialmotion:MA_Community .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#School_and_Club
+hkmalakg:School_and_Club rdf:type owl:Class ;
+                         rdfs:subClassOf martialmotion:MA_Community .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#Site
+hkmalakg:Site rdf:type owl:Class ;
+              rdfs:subClassOf ontologies:E53_Place .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg/#Temple_and_Sect
+hkmalakg:Temple_and_Sect rdf:type owl:Class ;
+                         rdfs:subClassOf martialmotion:MA_Community .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
