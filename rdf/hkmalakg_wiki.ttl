@@ -1,4 +1,3 @@
-@prefix : <http://EncodingActs.github.io/annotated/hkmalakg_wiki#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,7 +8,7 @@
 @prefix webprotege: <http://webprotege.stanford.edu/> .
 @prefix hkmalakg-wiki: <http://EncodingActs.github.io/annotated/hkmalakg_wiki#> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
-@base <http://EncodingActs.github.io/annotated/hkmalakg_wiki> .
+@base <http://EncodingActs.github.io/annotated/hkmalakg_wiki.ttl> .
 
 <http://EncodingActs.github.io/annotated/hkmalakg_wiki> rdf:type owl:Ontology ;
                                                                    owl:imports <http://EncodingActs.github.io/MAont/hkmalakg> .
