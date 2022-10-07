@@ -1,0 +1,1741 @@
+@prefix : <http://EncodingActs.github.io/annotated/hkmalakg_wiki#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hkmalakg: <http://EncodingActs.github.io/MAont/hkmalakg#> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@prefix hkmalakg-wiki: <http://EncodingActs.github.io/annotated/hkmalakg_wiki#> .
+@prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
+@base <http://EncodingActs.github.io/annotated/hkmalakg_wiki> .
+
+<http://EncodingActs.github.io/annotated/hkmalakg_wiki> rdf:type owl:Ontology ;
+                                                                   owl:imports <http://EncodingActs.github.io/MAont/hkmalakg> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#EN_first_name
+hkmalakg-wiki:EN_first_name rdf:type owl:AnnotationProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#family_name
+hkmalakg-wiki:family_name rdf:type owl:AnnotationProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#first_name
+hkmalakg-wiki:first_name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://semanticweb.org/ont/martialmotion#created_by
+martialmotion:created_by owl:inverseOf hkmalakg-wiki:creates .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#creates
+hkmalakg-wiki:creates rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain martialmotion:MA_Community ,
+                                  martialmotion:Master ;
+                      rdfs:range martialmotion:MA_style .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#featureID
+hkmalakg:featureID rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#fileDescription
+hkmalakg:fileDescription rdfs:subPropertyOf hkmalakg-wiki:fileAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#filePath
+hkmalakg:filePath rdfs:subPropertyOf hkmalakg-wiki:fileAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#fileProduceDate
+hkmalakg:fileProduceDate rdfs:subPropertyOf hkmalakg-wiki:fileAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#fileProducer
+hkmalakg:fileProducer rdfs:subPropertyOf hkmalakg-wiki:fileAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personAppelation
+hkmalakg:personAppelation rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personBiography
+hkmalakg:personBiography rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personBirthday
+hkmalakg:personBirthday rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personBirthplace
+hkmalakg:personBirthplace rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personDeathday
+hkmalakg:personDeathday rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#personGender
+hkmalakg:personGender rdfs:subPropertyOf hkmalakg-wiki:personAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#placeDescription
+hkmalakg:placeDescription rdfs:subPropertyOf hkmalakg-wiki:placeAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#placeENName
+hkmalakg:placeENName rdfs:subPropertyOf hkmalakg-wiki:placeAppelation .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#placeLocation
+hkmalakg:placeLocation rdfs:subPropertyOf hkmalakg-wiki:placeAttribute .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#placeZHName
+hkmalakg:placeZHName rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf hkmalakg-wiki:placeAppelation .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#EN_family_name
+hkmalakg-wiki:EN_family_name rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf hkmalakg-wiki:personENName ;
+                             rdfs:range xsd:string .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#communityAppealation
+hkmalakg-wiki:communityAppealation rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf hkmalakg-wiki:communityAttribute .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#communityAttribute
+hkmalakg-wiki:communityAttribute rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#communityENName
+hkmalakg-wiki:communityENName rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf hkmalakg-wiki:communityAppealation .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#communityZHName
+hkmalakg-wiki:communityZHName rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf hkmalakg-wiki:communityAppealation .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#fileAttribute
+hkmalakg-wiki:fileAttribute rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#personAttribute
+hkmalakg-wiki:personAttribute rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#personENName
+hkmalakg-wiki:personENName rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf hkmalakg:personAppelation ;
+                           rdfs:range xsd:Name ,
+                                      xsd:string .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#personZHName
+hkmalakg-wiki:personZHName rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf hkmalakg:personAppelation .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#placeAppelation
+hkmalakg-wiki:placeAppelation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf hkmalakg-wiki:placeAttribute .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#placeAttribute
+hkmalakg-wiki:placeAttribute rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#styleAppelation
+hkmalakg-wiki:styleAppelation rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf hkmalakg-wiki:styleAttribute .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#styleAttribute
+hkmalakg-wiki:styleAttribute rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#styleENName
+hkmalakg-wiki:styleENName rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf hkmalakg-wiki:styleAppelation .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#styleZHName
+hkmalakg-wiki:styleZHName rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf hkmalakg-wiki:styleAppelation .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://semanticweb.org/ont/martialmotion#MA_style
+martialmotion:MA_style rdfs:subClassOf <http://www.semanticweb.org/yumeng/ontologies/2021/MA_ont#E28_Conceptual_Object> ;
+                       owl:disjointWith martialmotion:MA_system ;
+                       rdfs:comment """Martial arts style is composed with its own sets of techniques and ideas. For each style, many practioners and communities have inherited inherited and developed it.
+
+Data source: https://en.wikipedia.org/wiki/Styles_of_Chinese_martial_arts"""@en .
+
+
+###  http://semanticweb.org/ont/martialmotion#MA_system
+martialmotion:MA_system rdfs:subClassOf <http://www.semanticweb.org/yumeng/ontologies/2021/MA_ont#E28_Conceptual_Object> ;
+                        rdfs:comment """There are many distinct styles and schools of martial arts. Sometimes, schools or styles are introduced by individual teachers or masters, or as a brand name by a specific gym. Martial arts can be grouped by type or focus, or alternatively by regional origin.
+
+Data source example: https://en.wikipedia.org/wiki/List_of_martial_arts""" .
+
+
+###  http://semanticweb.org/ont/martialmotion#Master
+martialmotion:Master rdfs:comment """Well-known practitioners throughout history.
+
+Data source example: https://en.wikipedia.org/wiki/Category:Chinese_martial_artists"""@en .
+
+
+###  http://semanticweb.org/ont/martialmotion#Region
+martialmotion:Region rdfs:comment "Regions are areas that are broadly divided by physical characteristics, human impact characteristics, and the interaction of humanity and the environment."@en .
+
+
+###  http://www.semanticweb.org/yumeng/ontologies/2021/MA_ont#E28_Conceptual_Object
+<http://www.semanticweb.org/yumeng/ontologies/2021/MA_ont#E28_Conceptual_Object> rdf:type owl:Class ;
+                                                                                 rdfs:comment <http://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#Association
+hkmalakg:Association rdfs:comment """A group of people organized for a joint purpose. An association is usually formed with the offical approval.
+
+Data source example: https://en.wikipedia.org/wiki/Category:Martial_arts_organizations"""@en .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#City
+hkmalakg:City rdfs:comment "A permanent and densely settled place with administratively defined boundaries whose members work primarily on non-agricultural tasks." .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#Clan
+hkmalakg:Clan rdfs:comment "A group of people united by actual or perceived kinship and descent. Clan is a common form of Chinese Martial Arts community throughout its history. Famous clan examples include the Lam Family of Hung Ga lineage (http://www.hungkuen.com/familytree.htm)."@en .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#Site
+hkmalakg:Site rdfs:comment "An area of ground on which a town, building, or monument is constructed. Martial arts sites are usually those historical or important locations."@en .
+
+
+###  http://EncodingActs.github.io/MAont/hkmalakg#Temple_and_Sect
+hkmalakg:Temple_and_Sect rdfs:comment """Chinese temple architecture refer to a type of structures used as place of worship of Chinese Buddhism, Taoism or Chinese folk religion.
+
+Data source: https://en.wikipedia.org/wiki/Chinese_temple_architecture"""@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ang_Lian_Huat
+hkmalakg-wiki:Ang_Lian_Huat rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            hkmalakg-wiki:personENName "Ang Lian Huat" ;
+                            rdfs:comment "https://www.namyangbrighton.co.uk/master-ang-lian-huat/" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Bafaquan
+hkmalakg-wiki:Bafaquan rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       martialmotion:created_by hkmalakg-wiki:Li_De_Mao ;
+                       hkmalakg-wiki:styleENName "Ba Fa" ,
+                                                 "Bafaquan" ,
+                                                 "Eight Methods" ;
+                       hkmalakg-wiki:styleZHName "八法拳" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Bafaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Baguazhang
+hkmalakg-wiki:Baguazhang rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Baguazhang" ,
+                                                   "Pakua chang" ;
+                         hkmalakg-wiki:styleZHName "八卦掌" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Baguazhang" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Bajiquan
+hkmalakg-wiki:Bajiquan rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       hkmalakg-wiki:styleENName "Bajiquan" ;
+                       hkmalakg-wiki:styleZHName "八極拳" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Bajiquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Bak_Mei
+hkmalakg-wiki:Bak_Mei rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      martialmotion:practices hkmalakg-wiki:Bak_Mei_Kung_Fu ;
+                      hkmalakg-wiki:creates hkmalakg-wiki:Bak_Mei_Kung_Fu ;
+                      hkmalakg-wiki:personENName "Bak Mei" ;
+                      hkmalakg-wiki:personZHName "白眉" ,
+                                                 "白眉道人" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Bak_Mei" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Bak_Mei_Kung_Fu
+hkmalakg-wiki:Bak_Mei_Kung_Fu rdf:type owl:NamedIndividual ,
+                                       martialmotion:MA_style ;
+                              martialmotion:created_by hkmalakg-wiki:Bak_Mei ;
+                              hkmalakg-wiki:styleENName "Bak Mei Kung Fu" ;
+                              hkmalakg-wiki:styleZHName "白眉功夫" ;
+                              rdfs:comment "https://en.wikipedia.org/wiki/Bak_Mei" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Blue_House
+hkmalakg-wiki:Blue_House rdf:type owl:NamedIndividual ,
+                                  hkmalakg:Site ;
+                         hkmalakg:locates_in hkmalakg-wiki:Hong_Kong ,
+                                             hkmalakg-wiki:Wanchai_district ;
+                         hkmalakg:placeENName "Blue House" ;
+                         hkmalakg:placeZHName "蓝屋" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Blue_House_(Hong_Kong)" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Bruce_Lee
+hkmalakg-wiki:Bruce_Lee rdf:type owl:NamedIndividual ,
+                                 martialmotion:Master ;
+                        martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                        hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ,
+                                               hkmalakg-wiki:Wong_Shun_Leung ;
+                        hkmalakg-wiki:personENName "Bruce Lee" ;
+                        hkmalakg-wiki:personZHName "李小龍" ,
+                                                   "李振藩" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Bruce_Lee" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chan_Heung
+hkmalakg-wiki:Chan_Heung rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         hkmalakg-wiki:creates hkmalakg-wiki:Choy_Li_Fut ;
+                         hkmalakg-wiki:personENName "Chan Heung" ;
+                         hkmalakg-wiki:personZHName "陳享" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Chan_Heung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chan_Hon_Chung
+hkmalakg-wiki:Chan_Hon_Chung rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                             hkmalakg:is_student_of hkmalakg-wiki:Lam_Sai_Wing ;
+                             hkmalakg-wiki:personENName "Chan Hon Chung" ;
+                             hkmalakg-wiki:personZHName "陳漢宗" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Chan_Hon-chung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chan_Wah_Shun
+hkmalakg-wiki:Chan_Wah_Shun rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:is_parent_of hkmalakg-wiki:Ip_Chun ;
+                            martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                            hkmalakg:is_master_of hkmalakg-wiki:Ip_Man ,
+                                                  hkmalakg-wiki:Ng_Chung_Sok ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Leung_Jan ;
+                            hkmalakg-wiki:personENName "Chan Wah Shun" ;
+                            hkmalakg-wiki:personZHName "陈华顺" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Chan_Wah-shun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Changquan
+hkmalakg-wiki:Changquan rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Changquan" ,
+                                                  "Long Fist" ;
+                        hkmalakg-wiki:styleZHName "长拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Changquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chaquan
+hkmalakg-wiki:Chaquan rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Cha Fist" ,
+                                                "Chāquán" ;
+                      hkmalakg-wiki:styleZHName "查拳" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Ch%C4%81qu%C3%A1n" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chin_Na
+hkmalakg-wiki:Chin_Na rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Chin Na" ;
+                      hkmalakg-wiki:styleZHName "擒拿" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Chin_Na" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chin_Woo_Athletic_Association
+hkmalakg-wiki:Chin_Woo_Athletic_Association rdf:type owl:NamedIndividual ,
+                                                     hkmalakg:Association ;
+                                            martialmotion:founded_by hkmalakg-wiki:Huo_Yuanjia ;
+                                            hkmalakg:locates_in hkmalakg-wiki:Shanghai ;
+                                            hkmalakg-wiki:communityENName "Chin Woo Athletic Association" ;
+                                            hkmalakg-wiki:communityZHName "精武體育會" ;
+                                            rdfs:comment "https://en.wikipedia.org/wiki/Chin_Woo_Athletic_Association" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chinese_Martial_Arts
+hkmalakg-wiki:Chinese_Martial_Arts rdf:type owl:NamedIndividual ,
+                                            martialmotion:MA_system ;
+                                   hkmalakg-wiki:styleENName "Chinese Martial Arts" ;
+                                   hkmalakg-wiki:styleZHName "中国武术" ;
+                                   rdfs:comment "https://en.wikipedia.org/wiki/Chinese_martial_arts" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chiu_Chi_Ling
+hkmalakg-wiki:Chiu_Chi_Ling rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Chiu_Kau ;
+                            hkmalakg-wiki:personENName "Chiu Chi Ling" ;
+                            hkmalakg-wiki:personZHName "趙志淩" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Chiu_Chi-ling" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chiu_Kau
+hkmalakg-wiki:Chiu_Kau rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       martialmotion:is_parent_of hkmalakg-wiki:Chiu_Chi_Ling ,
+                                                  hkmalakg-wiki:Chiu_Wai ;
+                       martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                       hkmalakg:is_master_of hkmalakg-wiki:Chiu_Chi_Ling ,
+                                             hkmalakg-wiki:Chiu_Wai ;
+                       hkmalakg:is_student_of hkmalakg-wiki:Lam_Sai_Wing ;
+                       hkmalakg-wiki:personENName "Chiu Kau" ,
+                                                  "Zhao Jiao" ;
+                       hkmalakg-wiki:personZHName "趙教" ;
+                       rdfs:comment "https://practicalhungkyun.com/tag/chiu-kau/" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chiu_Wai
+hkmalakg-wiki:Chiu_Wai rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       hkmalakg:is_student_of hkmalakg-wiki:Chiu_Kau ;
+                       hkmalakg-wiki:personENName "Chiu Wai" ;
+                       hkmalakg-wiki:personZHName "趙威" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Choy_Gar
+hkmalakg-wiki:Choy_Gar rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       martialmotion:created_by hkmalakg-wiki:Choy_Gau_Lee ;
+                       hkmalakg-wiki:styleENName "Choy Gar" ;
+                       hkmalakg-wiki:styleZHName "蔡家拳" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Choy_gar" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Choy_Gau_Lee
+hkmalakg-wiki:Choy_Gau_Lee rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg-wiki:creates hkmalakg-wiki:Choy_Gar ;
+                           hkmalakg-wiki:personENName "Choi Gau Yi" ;
+                           hkmalakg-wiki:personZHName "蔡九仪" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Choy_gar" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Choy_Li_Fut
+hkmalakg-wiki:Choy_Li_Fut rdf:type owl:NamedIndividual ,
+                                   martialmotion:MA_style ;
+                          martialmotion:created_by hkmalakg-wiki:Chan_Heung ;
+                          hkmalakg-wiki:styleENName "Choy Li Fut" ;
+                          hkmalakg-wiki:styleZHName "蔡李佛" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Choy_Li_Fut" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Chuojiao
+hkmalakg-wiki:Chuojiao rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       martialmotion:created_by hkmalakg-wiki:Deng_Liang ;
+                       hkmalakg-wiki:styleENName "Chuo Jiao" ;
+                       hkmalakg-wiki:styleZHName "戳腳" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Chu%C5%8Dji%C7%8Eo" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Deng_Feng
+hkmalakg-wiki:Deng_Feng rdf:type owl:NamedIndividual ,
+                                 hkmalakg:City ;
+                        hkmalakg:placeENName "Dengfeng" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Dengfeng" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Deng_Liang
+hkmalakg-wiki:Deng_Liang rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         hkmalakg-wiki:creates hkmalakg-wiki:Chuojiao ;
+                         hkmalakg-wiki:personENName "Deng Liang" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Chu%C5%8Dji%C7%8Eo" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ditangquan
+hkmalakg-wiki:Ditangquan rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         martialmotion:created_by hkmalakg-wiki:Hui_Kai ;
+                         hkmalakg-wiki:styleENName "Ditangquan" ;
+                         hkmalakg-wiki:styleZHName "地趟拳" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Ditangquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Dong_Haichuan
+hkmalakg-wiki:Dong_Haichuan rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:practices hkmalakg-wiki:Baguazhang ;
+                            hkmalakg-wiki:creates hkmalakg-wiki:Baguazhang ;
+                            hkmalakg-wiki:personENName "Dong Haichuan" ;
+                            hkmalakg-wiki:personZHName "董海川" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Dong_Haichuan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Drunken_Monkey
+hkmalakg-wiki:Drunken_Monkey rdf:type owl:NamedIndividual ,
+                                      martialmotion:MA_style ;
+                             hkmalakg-wiki:styleENName "Drunken Monkey" ;
+                             hkmalakg-wiki:styleZHName "醉猴" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Drunken_Monkey" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Duan_Quan
+hkmalakg-wiki:Duan_Quan rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Duan Quan" ,
+                                                  "短拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Duan_Quan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Eagle_Claw
+hkmalakg-wiki:Eagle_Claw rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         martialmotion:created_by hkmalakg-wiki:Yue_Fei ;
+                         hkmalakg-wiki:styleENName "Eagle Claw" ;
+                         hkmalakg-wiki:styleZHName "鷹爪派" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Eagle_Claw" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Emeiquan
+hkmalakg-wiki:Emeiquan rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       hkmalakg-wiki:styleENName "Emeiquan" ;
+                       hkmalakg-wiki:styleZHName "峨嵋拳" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Emeiquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fanzi
+hkmalakg-wiki:Fanzi rdf:type owl:NamedIndividual ,
+                             martialmotion:MA_style ;
+                    martialmotion:created_by hkmalakg-wiki:Qi_Jiguang ;
+                    hkmalakg-wiki:styleENName "Fanzi" ;
+                    hkmalakg-wiki:styleZHName "翻子拳" ;
+                    rdfs:comment "https://en.wikipedia.org/wiki/Fanzi" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Feng_Shou
+hkmalakg-wiki:Feng_Shou rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Feng Shou" ;
+                        hkmalakg-wiki:styleZHName "風手" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Feng_Shou" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Five_Ancestors
+hkmalakg-wiki:Five_Ancestors rdf:type owl:NamedIndividual ,
+                                      martialmotion:MA_style ;
+                             hkmalakg-wiki:styleENName "Five Ancestors Fist" ;
+                             hkmalakg-wiki:styleZHName "五祖拳" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Five_Ancestors" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Five_Animals
+hkmalakg-wiki:Five_Animals rdf:type owl:NamedIndividual ,
+                                    martialmotion:MA_style ;
+                           hkmalakg-wiki:styleENName "Five Animals" ;
+                           hkmalakg-wiki:styleZHName "五形" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Five_Animals" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Five_Elders
+hkmalakg-wiki:Five_Elders rdf:type owl:NamedIndividual ,
+                                   hkmalakg:Temple_and_Sect ;
+                          martialmotion:founded_by hkmalakg-wiki:Bak_Mei ,
+                                                   hkmalakg-wiki:Fung_Dou_Dak ,
+                                                   hkmalakg-wiki:Ji_Sin ,
+                                                   hkmalakg-wiki:Miu_Hin ,
+                                                   hkmalakg-wiki:Ng_Mui ;
+                          hkmalakg-wiki:communityENName "Five Elders of Shaolin" ;
+                          hkmalakg-wiki:communityZHName "少林五祖" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Five_Elders#The_Five_Family_Elders" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fong_Sai_Yuk
+hkmalakg-wiki:Fong_Sai_Yuk rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                           hkmalakg-wiki:personZHName "方世玉" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Fong_Sai-yuk" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fong_Tak
+hkmalakg-wiki:Fong_Tak rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       martialmotion:is_parent_of hkmalakg-wiki:Fong_Sai_Yuk ;
+                       hkmalakg-wiki:personENName "Fang De" ,
+                                                  "Fong Tak" ;
+                       hkmalakg-wiki:personZHName "方德" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fu_Jow_Pai
+hkmalakg-wiki:Fu_Jow_Pai rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Fu Jow Pai" ,
+                                                   "虎爪派" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Fu_Jow_Pai" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fujian_White_Crane
+hkmalakg-wiki:Fujian_White_Crane rdf:type owl:NamedIndividual ,
+                                          martialmotion:MA_style ;
+                                 hkmalakg-wiki:styleENName "White Crane Style" ;
+                                 hkmalakg-wiki:styleZHName "白鶴拳" ;
+                                 rdfs:comment "https://en.wikipedia.org/wiki/Fujian_White_Crane" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fung_Dou_Dak
+hkmalakg-wiki:Fung_Dou_Dak rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg-wiki:personENName "Fung Dou Dak" ;
+                           hkmalakg-wiki:personZHName "冯道德" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Fung_Dou_Dak" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Fut_Gar
+hkmalakg-wiki:Fut_Gar rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Fut Ga Kuen" ;
+                      hkmalakg-wiki:styleZHName "佛家拳" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Fut_Gar" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Gam_Faat_Sim_Si
+hkmalakg-wiki:Gam_Faat_Sim_Si rdf:type owl:NamedIndividual ,
+                                       martialmotion:Master ;
+                              hkmalakg-wiki:personENName "Gam_Faat" ;
+                              hkmalakg-wiki:personZHName "感法" ,
+                                                         "感法禅师" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Gordon_Liu
+hkmalakg-wiki:Gordon_Liu rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         owl:sameAs hkmalakg-wiki:Lau_Kar_Fai ;
+                         martialmotion:practices hkmalakg-wiki:Lingnan_Lau_Family_Hung_Kuen ;
+                         hkmalakg:is_student_of hkmalakg-wiki:Lau_Kar_Wing ;
+                         hkmalakg:sworn_brothers hkmalakg-wiki:Lau_Kar_Leung ;
+                         hkmalakg-wiki:EN_family_name "Lau" ,
+                                                      "Liu" ;
+                         hkmalakg-wiki:personENName "Lau Kar Fai" ;
+                         hkmalakg-wiki:personZHName "劉家輝" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Gordon_Liu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Heihuquan
+hkmalakg-wiki:Heihuquan rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Black Tiger Fist" ,
+                                                  "Heihuquan" ;
+                        hkmalakg-wiki:styleZHName "黑虎拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Heihuquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Hong_Kong
+hkmalakg-wiki:Hong_Kong rdf:type owl:NamedIndividual ,
+                                 hkmalakg:City ;
+                        hkmalakg:placeENName "Hong Kong" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Hong_Kong" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Huaquan
+hkmalakg-wiki:Huaquan rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Huaquan" ,
+                                                "华拳" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Huaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Hui_Kai
+hkmalakg-wiki:Hui_Kai rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg-wiki:creates hkmalakg-wiki:Ditangquan ;
+                      hkmalakg-wiki:personENName "Hui Kai" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Ditangquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Hung_Fut
+hkmalakg-wiki:Hung_Fut rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       hkmalakg-wiki:styleENName "Hung Fut" ,
+                                                 "洪佛" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Hung_Fut" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Hung_Hei_Gun
+hkmalakg-wiki:Hung_Hei_Gun rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                           hkmalakg:is_master_of hkmalakg-wiki:Lei_Jou_Fan ,
+                                                 hkmalakg-wiki:Luk_Ah_Choi ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Ji_Sin ;
+                           hkmalakg-wiki:personENName "Hung Hei Gun" ;
+                           hkmalakg-wiki:personZHName "洪熙官" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Hung_Hei-gun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Hung_Kuen
+hkmalakg-wiki:Hung_Kuen rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        martialmotion:created_by hkmalakg-wiki:Hung_Hei_Gun ;
+                        hkmalakg:belongs_to_system hkmalakg-wiki:Southern_Chinese_Martial_Arts ;
+                        hkmalakg:subStyle_of hkmalakg-wiki:Southern_Shaolin_styles ;
+                        hkmalakg-wiki:styleENName "Hung Ga" ,
+                                                  "Hung Ga Kuen" ,
+                                                  "Hung Kuen" ;
+                        hkmalakg-wiki:styleZHName "洪拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Hung_Ga" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Huo_Yuanjia
+hkmalakg-wiki:Huo_Yuanjia rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          martialmotion:practices hkmalakg-wiki:Mizongyi ;
+                          hkmalakg-wiki:personENName "Huo Yuanjia" ;
+                          hkmalakg-wiki:personZHName "霍元甲" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Huo_Yuanjia" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#International_Guoshu_Association
+hkmalakg-wiki:International_Guoshu_Association rdf:type owl:NamedIndividual ,
+                                                        hkmalakg:Association ;
+                                               hkmalakg-wiki:communityENName "International Guoshu Association" ;
+                                               hkmalakg-wiki:communityZHName "中華國術總會" ;
+                                               rdfs:comment "https://www.facebook.com/guoshuintl/" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ip_Ching
+hkmalakg-wiki:Ip_Ching rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                       hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                       hkmalakg-wiki:personENName "Ip Ching" ;
+                       hkmalakg-wiki:personZHName "叶学正" ,
+                                                  "葉正" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Ip_Ching" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ip_Chun
+hkmalakg-wiki:Ip_Chun rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                      hkmalakg-wiki:personENName "Ip Chun" ;
+                      hkmalakg-wiki:personZHName "叶准" ,
+                                                 "葉準" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Ip_Chun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ip_Man
+hkmalakg-wiki:Ip_Man rdf:type owl:NamedIndividual ,
+                              martialmotion:Master ;
+                     martialmotion:is_parent_of hkmalakg-wiki:Ip_Ching ;
+                     martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                     hkmalakg:is_master_of hkmalakg-wiki:Bruce_Lee ,
+                                           hkmalakg-wiki:Ip_Ching ,
+                                           hkmalakg-wiki:Ip_Chun ,
+                                           hkmalakg-wiki:Wong_Shun_Leung ;
+                     hkmalakg:is_student_of hkmalakg-wiki:Chan_Wah_Shun ,
+                                            hkmalakg-wiki:Leung_Bik ;
+                     hkmalakg-wiki:personENName "Ip Man" ,
+                                                "Yip Man" ;
+                     hkmalakg-wiki:personZHName "叶问" ,
+                                                "葉問" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Ip_Man" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ji_Sin
+hkmalakg-wiki:Ji_Sin rdf:type owl:NamedIndividual ,
+                              martialmotion:Master ;
+                     martialmotion:practices hkmalakg-wiki:Southern_Shaolin_styles ;
+                     hkmalakg:is_master_of hkmalakg-wiki:Hung_Hei_Gun ,
+                                           hkmalakg-wiki:Luk_Ah_Choi ;
+                     hkmalakg-wiki:personENName "Ji Sin" ;
+                     hkmalakg-wiki:personZHName "至善禪師" ;
+                     rdfs:comment """Ji Sin is one of the Five Elders of Shaolin (Chinese: 少林五祖), who built Southern Shaolin Monastery in Fujian province.
+
+Source: https://en.wikipedia.org/wiki/Jee_Sin_Sim_See
+https://en.wikipedia.org/wiki/Five_Elders""" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#John_Leong
+hkmalakg-wiki:John_Leong rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         hkmalakg:is_student_of hkmalakg-wiki:Wong_Lee ;
+                         hkmalakg-wiki:personENName "John Leong" ;
+                         hkmalakg-wiki:personZHName "梁崇" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Jow_Ga_Kuen
+hkmalakg-wiki:Jow_Ga_Kuen rdf:type owl:NamedIndividual ,
+                                   martialmotion:MA_style ;
+                          hkmalakg-wiki:styleENName "Jow Ga Kuen" ;
+                          hkmalakg-wiki:styleZHName "周家拳" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Jow-Ga_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Kong_Bucksam
+hkmalakg-wiki:Kong_Bucksam rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Hung_Kuen ,
+                                                   hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Lam_Cho ;
+                           hkmalakg-wiki:personENName "Kong Bucksam" ;
+                           hkmalakg-wiki:personZHName "江北山" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Kou_Sze
+hkmalakg-wiki:Kou_Sze rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg-wiki:creates hkmalakg-wiki:Drunken_Monkey ;
+                      hkmalakg-wiki:personENName "Kou Sze" ;
+                      hkmalakg-wiki:personZHName "寇四" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Drunken_Monkey" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Kunlunquan
+hkmalakg-wiki:Kunlunquan rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Kunlunquan" ;
+                         hkmalakg-wiki:styleZHName "昆仑拳" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Kunlunquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Kwong_Tit_Fu
+hkmalakg-wiki:Kwong_Tit_Fu rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Hung_Kuen ,
+                                                   hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Lam_Cho ;
+                           hkmalakg-wiki:personENName "Kwong Tit Fu" ;
+                           hkmalakg-wiki:personZHName "鄺鐵夫" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lai_Tung_Pai
+hkmalakg-wiki:Lai_Tung_Pai rdf:type owl:NamedIndividual ,
+                                    martialmotion:MA_style ;
+                           hkmalakg-wiki:styleZHName "Lai Tung Pai" ,
+                                                     "黎峒派" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Lai_Tung_Pai" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Cho
+hkmalakg-wiki:Lam_Cho rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      martialmotion:is_parent_of hkmalakg-wiki:Lam_Chun_Chung ,
+                                                 hkmalakg-wiki:Lam_Chun_Fai ,
+                                                 hkmalakg-wiki:Lam_Chun_Hin ,
+                                                 hkmalakg-wiki:Lam_Chun_Sing ;
+                      martialmotion:is_relative_of hkmalakg-wiki:Lam_Sai_Wing ;
+                      martialmotion:practices hkmalakg-wiki:Hung_Kuen ,
+                                              hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                      hkmalakg:is_master_of hkmalakg-wiki:Wong_Yew_Ching ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Lam_Sai_Wing ;
+                      hkmalakg-wiki:personENName "Lam Cho" ;
+                      hkmalakg-wiki:personZHName "林冠球" ,
+                                                 "林祖" ,
+                                                 "林祖根" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Chuen_Ho
+hkmalakg-wiki:Lam_Chuen_Ho rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                           hkmalakg-wiki:EN_family_name "Lam" ;
+                           hkmalakg-wiki:personZHName "林存浩" ;
+                           hkmalakg-wiki:EN_first_name "Oscar" ;
+                           hkmalakg-wiki:family_name "林" ;
+                           hkmalakg-wiki:first_name "存浩" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Chun_Chung
+hkmalakg-wiki:Lam_Chun_Chung rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:has_parent hkmalakg-wiki:Lam_Cho ;
+                             martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                             hkmalakg-wiki:personENName "Lam Chun Chung" ;
+                             hkmalakg-wiki:personZHName "林鎮忠" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Chun_Fai
+hkmalakg-wiki:Lam_Chun_Fai rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:has_parent hkmalakg-wiki:Lam_Cho ;
+                           martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                           hkmalakg:resides_in hkmalakg-wiki:Blue_House ;
+                           hkmalakg-wiki:personENName "Lam Chun Fai" ;
+                           hkmalakg-wiki:personZHName "林鎮輝" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Chun_Hin
+hkmalakg-wiki:Lam_Chun_Hin rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:has_parent hkmalakg-wiki:Lam_Cho ;
+                           martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                           hkmalakg-wiki:personENName "Lam Chun Hin" ;
+                           hkmalakg-wiki:personZHName "林鎮顯" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Chun_Sing
+hkmalakg-wiki:Lam_Chun_Sing rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:has_parent hkmalakg-wiki:Lam_Cho ;
+                            martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                            hkmalakg-wiki:personENName "Lam Chun Sing" ;
+                            hkmalakg-wiki:personZHName "林鎮成" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Family
+hkmalakg-wiki:Lam_Family rdf:type owl:NamedIndividual ,
+                                  hkmalakg:Clan ;
+                         martialmotion:founded_by hkmalakg-wiki:Lam_Cho ;
+                         hkmalakg-wiki:communityENName "Lam Family Hung Ga lineage" ;
+                         hkmalakg-wiki:communityZHName "林氏洪拳" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Lam_Cho" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lam_Sai_Wing
+hkmalakg-wiki:Lam_Sai_Wing rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ,
+                                                   hkmalakg-wiki:Lingnan_Lau_Family_Hung_Kuen ;
+                           hkmalakg:is_master_of hkmalakg-wiki:Chiu_Kau ,
+                                                 hkmalakg-wiki:Lam_Cho ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Wong_Fei_Hung ;
+                           hkmalakg-wiki:personENName "Lam Sai Wing" ;
+                           hkmalakg-wiki:personZHName "林世榮" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Lam_Sai-wing" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lau_Cham
+hkmalakg-wiki:Lau_Cham rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       hkmalakg:is_student_of hkmalakg-wiki:Lam_Sai_Wing ;
+                       hkmalakg-wiki:personENName "Lau Cham" ,
+                                                  "Lau Jaam" ;
+                       hkmalakg-wiki:personZHName "劉湛" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Lam_Sai-wing" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lau_Kar_Fai
+hkmalakg-wiki:Lau_Kar_Fai rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          hkmalakg-wiki:personENName "Lau Kar Fai" ;
+                          hkmalakg-wiki:personZHName "劉家輝" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Gordon_Liu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lau_Kar_Leung
+hkmalakg-wiki:Lau_Kar_Leung rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                            hkmalakg:is_master_of hkmalakg-wiki:Mark_Ho ;
+                            hkmalakg-wiki:personENName "Lau Kar Lueng" ;
+                            hkmalakg-wiki:personZHName "劉家良" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Lau_Kar-leung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lau_Kar_Wing
+hkmalakg-wiki:Lau_Kar_Wing rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Lau_Kar_Yong ;
+                           hkmalakg-wiki:personENName "Lau Kar Wing" ;
+                           hkmalakg-wiki:personZHName "劉家榮" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Lau_Kar-wing" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lau_Kar_Yong
+hkmalakg-wiki:Lau_Kar_Yong rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Lau_Cham ;
+                           hkmalakg-wiki:personENName "Lau Kar Yong" ;
+                           hkmalakg-wiki:personZHName "刘家勇" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lee_Yon
+hkmalakg-wiki:Lee_Yon rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Tang_Kwok_Wah ;
+                      hkmalakg-wiki:personENName "Lee Yon" ;
+                      hkmalakg-wiki:personZHName "李健遠" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lei_Jou_Fan
+hkmalakg-wiki:Lei_Jou_Fan rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          hkmalakg:is_student_of hkmalakg-wiki:Hung_Hei_Gun ;
+                          hkmalakg-wiki:personENName "Lei Jou Fan" ;
+                          hkmalakg-wiki:personZHName "李祖寬" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Hung_Hei-gun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leopard_Kung_Fu
+hkmalakg-wiki:Leopard_Kung_Fu rdf:type owl:NamedIndividual ,
+                                       martialmotion:MA_style ;
+                              hkmalakg-wiki:styleENName "Leopard Kung Fu" ;
+                              hkmalakg-wiki:styleZHName "豹拳" ;
+                              rdfs:comment "https://en.wikipedia.org/wiki/Leopard_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leung_Bik
+hkmalakg-wiki:Leung_Bik rdf:type owl:NamedIndividual ,
+                                 martialmotion:Master ;
+                        martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                        hkmalakg:is_master_of hkmalakg-wiki:Ip_Man ;
+                        hkmalakg:is_student_of hkmalakg-wiki:Leung_Jan ;
+                        hkmalakg-wiki:personENName "Leung Bik" ;
+                        hkmalakg-wiki:personZHName "梁璧" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Leung_Bik" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leung_Bok_Chau
+hkmalakg-wiki:Leung_Bok_Chau rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:is_relative_of hkmalakg-wiki:Yim_Wing_Chun ;
+                             martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                             hkmalakg:is_master_of hkmalakg-wiki:Leung_Lan_Kwai ;
+                             hkmalakg:is_student_of hkmalakg-wiki:Yim_Wing_Chun ;
+                             hkmalakg-wiki:personENName "Leung Bok Chau" ;
+                             hkmalakg-wiki:personZHName "梁博儔" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Yim_Wing-chun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leung_Jan
+hkmalakg-wiki:Leung_Jan rdf:type owl:NamedIndividual ,
+                                 martialmotion:Master ;
+                        martialmotion:is_parent_of hkmalakg-wiki:Leung_Bik ;
+                        martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                        hkmalakg:is_master_of hkmalakg-wiki:Chan_Wah_Shun ;
+                        hkmalakg:is_student_of hkmalakg-wiki:Wong_Wah_Bo ;
+                        hkmalakg-wiki:personENName "Leung Jan" ;
+                        hkmalakg-wiki:personZHName "梁贊" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Leung_Jan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leung_Kwan
+hkmalakg-wiki:Leung_Kwan rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                         hkmalakg-wiki:personENName "Leung Kwan" ;
+                         hkmalakg-wiki:personZHName "梁坤" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Leung_Lan_Kwai
+hkmalakg-wiki:Leung_Lan_Kwai rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:is_relative_of hkmalakg-wiki:Leung_Bok_Chau ;
+                             martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                             hkmalakg:is_master_of hkmalakg-wiki:Wong_Wah_Bo ;
+                             hkmalakg:is_student_of hkmalakg-wiki:Leung_Bok_Chau ;
+                             hkmalakg-wiki:personENName "Leung Lan Kwai" ;
+                             hkmalakg-wiki:personZHName "梁兰桂" ;
+                             rdfs:comment "https://zh.wikipedia.org/wiki/%E6%A2%81%E8%98%AD%E6%A1%82" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Li_De_Mao
+hkmalakg-wiki:Li_De_Mao rdf:type owl:NamedIndividual ,
+                                 martialmotion:Master ;
+                        martialmotion:practices hkmalakg-wiki:Bafaquan ;
+                        hkmalakg-wiki:creates hkmalakg-wiki:Bafaquan ;
+                        hkmalakg-wiki:personENName "Li Demao" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Bafaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Li_Gar
+hkmalakg-wiki:Li_Gar rdf:type owl:NamedIndividual ,
+                              martialmotion:MA_style ;
+                     hkmalakg-wiki:styleENName "Li Gar" ,
+                                               "李家功夫" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Li_(Lee)_Family" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lingnan_Kung_Fu
+hkmalakg-wiki:Lingnan_Kung_Fu rdf:type owl:NamedIndividual ,
+                                       martialmotion:MA_system ;
+                              hkmalakg:subSystem_of hkmalakg-wiki:Southern_Chinese_Martial_Arts ;
+                              hkmalakg-wiki:styleENName "Lingnan Kung Fu" ;
+                              hkmalakg-wiki:styleZHName "岭南功夫" ;
+                              rdfs:comment "https://sarahkenderdine.info/installations-and-curated-exhibitions/lingnan-hung-kuen-across-century" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lingnan_Lam_Family_Hung_Kuen
+hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
+                                                    martialmotion:MA_style ;
+                                           martialmotion:created_by hkmalakg-wiki:Lam_Sai_Wing ;
+                                           hkmalakg:belongs_to_system hkmalakg-wiki:Lingnan_Kung_Fu ,
+                                                                      hkmalakg-wiki:Southern_Chinese_Martial_Arts ;
+                                           hkmalakg:subStyle_of hkmalakg-wiki:Hung_Kuen ;
+                                           hkmalakg-wiki:styleENName "Lingnan Lam Family Hung Kuen" ;
+                                           hkmalakg-wiki:styleZHName "岭南林氏洪拳" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lingnan_Lau_Family_Hung_Kuen
+hkmalakg-wiki:Lingnan_Lau_Family_Hung_Kuen rdf:type owl:NamedIndividual ,
+                                                    martialmotion:MA_style ;
+                                           martialmotion:created_by hkmalakg-wiki:Lau_Cham ;
+                                           hkmalakg:belongs_to_system hkmalakg-wiki:Southern_Chinese_Martial_Arts ;
+                                           hkmalakg:subStyle_of hkmalakg-wiki:Hung_Kuen ;
+                                           hkmalakg:sworn_brothers hkmalakg-wiki:Lau_Kar_Leung ;
+                                           hkmalakg-wiki:styleENName "Lingnan Lau Family Hung Kuen" ;
+                                           hkmalakg-wiki:styleZHName "岭南刘氏洪拳" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Liuhebafa
+hkmalakg-wiki:Liuhebafa rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Liuhebafa" ,
+                                                  "六合八法拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Liuhebafa" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Lo_Man_Kam
+hkmalakg-wiki:Lo_Man_Kam rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                         hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                         hkmalakg-wiki:personENName "Lo Man Kam" ;
+                         hkmalakg-wiki:personZHName "盧文錦" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Lo_Man-kam_(martial_artist)" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Luk_Ah_Choi
+hkmalakg-wiki:Luk_Ah_Choi rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          hkmalakg:is_student_of hkmalakg-wiki:Hung_Hei_Gun ,
+                                                 hkmalakg-wiki:Ji_Sin ;
+                          hkmalakg-wiki:personENName "Luk Ah Choi" ;
+                          hkmalakg-wiki:personZHName "陆阿采" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Hung_Ga" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Luohan
+hkmalakg-wiki:Luohan rdf:type owl:NamedIndividual ,
+                              martialmotion:MA_style ;
+                     hkmalakg-wiki:styleENName "Luohan quan" ;
+                     hkmalakg-wiki:styleZHName "罗汉拳" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Luohan_quan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Macau
+hkmalakg-wiki:Macau rdf:type owl:NamedIndividual ,
+                             hkmalakg:City ;
+                    hkmalakg:placeENName "Macau" ;
+                    rdfs:comment "https://en.wikipedia.org/wiki/Macau" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Mark_Ho
+hkmalakg-wiki:Mark_Ho rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Lau_Kar_Leung ;
+                      hkmalakg-wiki:personENName "Ho Mai" ,
+                                                 "Mark Ho" ,
+                                                 "Mark Houghton" ;
+                      hkmalakg-wiki:personZHName "何麥" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Meihuaquan
+hkmalakg-wiki:Meihuaquan rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Meihuaquan" ;
+                         hkmalakg-wiki:styleZHName "梅花拳" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Meihuaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Mian_Quan
+hkmalakg-wiki:Mian_Quan rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Mian Quan" ;
+                        hkmalakg-wiki:styleZHName "棉拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Mian_Quan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Miu_Hin
+hkmalakg-wiki:Miu_Hin rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg-wiki:personENName "Miu Hin" ;
+                      hkmalakg-wiki:personZHName "苗显" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Miu_Hin" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Miu_Tsui_Fa
+hkmalakg-wiki:Miu_Tsui_Fa rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          martialmotion:is_parent_of hkmalakg-wiki:Fong_Sai_Yuk ;
+                          martialmotion:practices hkmalakg-wiki:Southern_Shaolin_styles ;
+                          hkmalakg-wiki:personENName "Miu Tsui Fa" ,
+                                                     "苗翠花" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Mizongyi
+hkmalakg-wiki:Mizongyi rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       hkmalakg-wiki:styleENName "Mizongyi" ;
+                       hkmalakg-wiki:styleZHName "迷蹤藝" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Mizongyi" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Mok_Gar
+hkmalakg-wiki:Mok_Gar rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Mok Gar" ;
+                      hkmalakg-wiki:styleZHName "莫家" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Mok_Gar" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Monkey_Kung_Fu
+hkmalakg-wiki:Monkey_Kung_Fu rdf:type owl:NamedIndividual ,
+                                      martialmotion:MA_style ;
+                             hkmalakg-wiki:styleENName "Monkey Kung Fu" ;
+                             hkmalakg-wiki:styleZHName "猴拳" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/Monkey_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Moy_Yat
+hkmalakg-wiki:Moy_Yat rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                      hkmalakg-wiki:personENName "Moy Yat" ;
+                      hkmalakg-wiki:personZHName "梅逸" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Moy_Yat" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ng_Chung_Sok
+hkmalakg-wiki:Ng_Chung_Sok rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                           hkmalakg:is_master_of hkmalakg-wiki:Ip_Man ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Chan_Wah_Shun ;
+                           hkmalakg-wiki:personENName "Ng Chung Sok" ;
+                           hkmalakg-wiki:personZHName "吳仲素" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Ng_Mui
+hkmalakg-wiki:Ng_Mui rdf:type owl:NamedIndividual ,
+                              martialmotion:Master ;
+                     martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                     hkmalakg-wiki:personENName "Ng Mui" ;
+                     hkmalakg-wiki:personZHName "伍枚" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Ng_Mui" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Northern_Praying_Mantis
+hkmalakg-wiki:Northern_Praying_Mantis rdf:type owl:NamedIndividual ,
+                                               martialmotion:MA_style ;
+                                      hkmalakg-wiki:styleENName "Northern Praying Mantis" ,
+                                                                "Tang Lang" ;
+                                      hkmalakg-wiki:styleZHName "螳螂拳" ;
+                                      rdfs:comment "https://en.wikipedia.org/wiki/Northern_Praying_Mantis" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Northern_Shaolin_Martial_Arts
+hkmalakg-wiki:Northern_Shaolin_Martial_Arts rdf:type owl:NamedIndividual ,
+                                                     martialmotion:MA_system ;
+                                            hkmalakg-wiki:styleENName "Northern Shaolin" ;
+                                            hkmalakg-wiki:styleZHName "北少林" ;
+                                            rdfs:comment "https://en.wikipedia.org/wiki/Northern_Shaolin_(martial_art)" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Pao_Chui
+hkmalakg-wiki:Pao_Chui rdf:type owl:NamedIndividual ,
+                                martialmotion:MA_style ;
+                       hkmalakg-wiki:styleENName "San Huang Pao Chui" ;
+                       hkmalakg-wiki:styleZHName "三皇炮捶" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/P%C3%A0o_Chu%C3%AD" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Piguaquan
+hkmalakg-wiki:Piguaquan rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        hkmalakg-wiki:styleENName "Piguaquan" ;
+                        hkmalakg-wiki:styleZHName "劈掛拳" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Piguaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Pushing_Hands
+hkmalakg-wiki:Pushing_Hands rdf:type owl:NamedIndividual ,
+                                     martialmotion:MA_style ;
+                            hkmalakg-wiki:styleENName "Pushing hands" ,
+                                                      "Tuishou" ;
+                            hkmalakg-wiki:styleZHName "推手" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Pushing_hands" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Qi_Jiguang
+hkmalakg-wiki:Qi_Jiguang rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         hkmalakg-wiki:creates hkmalakg-wiki:Fanzi ;
+                         hkmalakg-wiki:personENName "Qi Jiguang" ;
+                         hkmalakg-wiki:personZHName "戚继光" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Qi_Jiguang" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Sanda
+hkmalakg-wiki:Sanda rdf:type owl:NamedIndividual ,
+                             martialmotion:MA_style ;
+                    hkmalakg-wiki:styleENName "Sanda" ;
+                    hkmalakg-wiki:styleZHName "散打" ;
+                    rdfs:comment "https://en.wikipedia.org/wiki/Sanda_(sport)" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Sha_Dachuan
+hkmalakg-wiki:Sha_Dachuan rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          martialmotion:practices hkmalakg-wiki:Chaquan ;
+                          hkmalakg-wiki:creates hkmalakg-wiki:Chaquan ;
+                          hkmalakg-wiki:personENName "Sha Da Chuan" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Ch%C4%81qu%C3%A1n" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Shanghai
+hkmalakg-wiki:Shanghai rdf:type owl:NamedIndividual ,
+                                hkmalakg:City ;
+                       hkmalakg:placeENName "Shanghai" ;
+                       hkmalakg:placeZHName "上海" ;
+                       rdfs:comment "https://en.wikipedia.org/wiki/Shanghai" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Shaolin_Kung_Fu
+hkmalakg-wiki:Shaolin_Kung_Fu rdf:type owl:NamedIndividual ,
+                                       martialmotion:MA_style ;
+                              hkmalakg-wiki:styleENName "Shaolin Kung Fu" ;
+                              hkmalakg-wiki:styleZHName "少林功夫" ;
+                              rdfs:comment "https://en.wikipedia.org/wiki/Shaolin_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Shaolin_Monastery
+hkmalakg-wiki:Shaolin_Monastery rdf:type owl:NamedIndividual ,
+                                         hkmalakg:Temple_and_Sect ;
+                                hkmalakg:locates_in hkmalakg-wiki:Deng_Feng ,
+                                                    hkmalakg-wiki:Songshan_Mountain ;
+                                hkmalakg:placeENName "Shaolin Monastery" ;
+                                rdfs:comment "https://en.wikipedia.org/wiki/Shaolin_Monastery" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Shuai_Jiao
+hkmalakg-wiki:Shuai_Jiao rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Shuai Jiao" ;
+                         hkmalakg-wiki:styleZHName "摔角" ,
+                                                   "摔跤" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Shuai_jiao" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Snake_Kung_Fu
+hkmalakg-wiki:Snake_Kung_Fu rdf:type owl:NamedIndividual ,
+                                     martialmotion:MA_style ;
+                            hkmalakg-wiki:styleENName "Snake Kung Fu" ;
+                            hkmalakg-wiki:styleZHName "蛇拳" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Snake_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Songshan_Mountain
+hkmalakg-wiki:Songshan_Mountain rdf:type owl:NamedIndividual ,
+                                         martialmotion:Region ;
+                                hkmalakg:placeENName "Songshan Mountain" ;
+                                rdfs:comment "https://en.wikipedia.org/wiki/Mount_Song" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Southern_Chinese_Martial_Arts
+hkmalakg-wiki:Southern_Chinese_Martial_Arts rdf:type owl:NamedIndividual ,
+                                                     martialmotion:MA_system ;
+                                            hkmalakg:subSystem_of hkmalakg-wiki:Chinese_Martial_Arts ;
+                                            hkmalakg-wiki:styleENName "Nanquan" ,
+                                                                      "Southern Fist" ;
+                                            hkmalakg-wiki:styleZHName "南拳" ,
+                                                                      "南派功夫" ;
+                                            rdfs:comment "https://en.wikipedia.org/wiki/Nanquan_(martial_art)" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Southern_Dragon
+hkmalakg-wiki:Southern_Dragon rdf:type owl:NamedIndividual ,
+                                       martialmotion:MA_style ;
+                              hkmalakg-wiki:styleENName "Southern Dragon Kung Fu" ;
+                              hkmalakg-wiki:styleZHName "龍形摩橋" ;
+                              rdfs:comment "https://en.wikipedia.org/wiki/Southern_Dragon_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Southern_Praying_Mantis
+hkmalakg-wiki:Southern_Praying_Mantis rdf:type owl:NamedIndividual ,
+                                               martialmotion:MA_style ;
+                                      hkmalakg-wiki:styleENName "Southern Praying Mantis" ;
+                                      hkmalakg-wiki:styleZHName "南派螳螂" ;
+                                      rdfs:comment "https://en.wikipedia.org/wiki/Southern_Praying_Mantis" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Southern_Shaolin_Monastery
+hkmalakg-wiki:Southern_Shaolin_Monastery rdf:type owl:NamedIndividual ,
+                                                  hkmalakg:Temple_and_Sect ;
+                                         hkmalakg:placeENName "Southern Shaolin Monastery" ;
+                                         hkmalakg:placeZHName "南少林" ;
+                                         rdfs:comment "https://en.wikipedia.org/wiki/Southern_Shaolin_Monastery" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Southern_Shaolin_styles
+hkmalakg-wiki:Southern_Shaolin_styles rdf:type owl:NamedIndividual ,
+                                               martialmotion:MA_style ;
+                                      hkmalakg:belongs_to_system hkmalakg-wiki:Southern_Chinese_Martial_Arts ;
+                                      hkmalakg-wiki:styleENName "Southern Shaolin" ;
+                                      hkmalakg-wiki:styleZHName "南少林" ;
+                                      rdfs:comment "https://en.wikipedia.org/wiki/Shaolin_Kung_Fu" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tai_Chi
+hkmalakg-wiki:Tai_Chi rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Tai Chi" ;
+                      hkmalakg-wiki:styleZHName "太極拳" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Tai_chi" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tam_An
+hkmalakg-wiki:Tam_An rdf:type owl:NamedIndividual ,
+                              martialmotion:Master ;
+                     martialmotion:is_parent_of hkmalakg-wiki:Tam_An ;
+                     hkmalakg:is_student_of hkmalakg-wiki:Tam_Yi_Kwan ;
+                     hkmalakg-wiki:personENName "Tam An" ;
+                     hkmalakg-wiki:personZHName "譚安" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tam_Gin_Hing
+hkmalakg-wiki:Tam_Gin_Hing rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Tam_Yi_Kwan ;
+                           hkmalakg-wiki:personENName "Tam Gin Hing" ;
+                           hkmalakg-wiki:personZHName "譚建興" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tam_Man
+hkmalakg-wiki:Tam_Man rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg:is_student_of hkmalakg-wiki:Tam_Yi_Kwan ;
+                      hkmalakg-wiki:personENName "Tam Man" ;
+                      hkmalakg-wiki:personZHName "譚敏" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tam_Yeung
+hkmalakg-wiki:Tam_Yeung rdf:type owl:NamedIndividual ,
+                                 martialmotion:Master ;
+                        hkmalakg:is_student_of hkmalakg-wiki:Tam_Yi_Kwan ;
+                        hkmalakg-wiki:personENName "Tam Yeung" ;
+                        hkmalakg-wiki:personZHName "譚讓" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tam_Yi_Kwan
+hkmalakg-wiki:Tam_Yi_Kwan rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          hkmalakg:is_master_of hkmalakg-wiki:Tam_Yeung ;
+                          hkmalakg:is_student_of hkmalakg-wiki:Gam_Faat_Sim_Si ;
+                          hkmalakg-wiki:personENName "Tam Yi Kwan" ;
+                          hkmalakg-wiki:personZHName "譚義均" ;
+                          rdfs:comment "http://www.chhcanada.com/history_hung_gar/?lang=en" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tan_Tui
+hkmalakg-wiki:Tan_Tui rdf:type owl:NamedIndividual ,
+                               martialmotion:MA_style ;
+                      hkmalakg-wiki:styleENName "Tan Tui" ,
+                                                "弹腿" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/T%C3%A1n_Tu%C7%90" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tang_Kwok_Wah
+hkmalakg-wiki:Tang_Kwok_Wah rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Lam_Cho ;
+                            hkmalakg-wiki:personENName "Tang Kwok Wah" ;
+                            hkmalakg-wiki:personZHName "鄧國華" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tien_Shan_Pai
+hkmalakg-wiki:Tien_Shan_Pai rdf:type owl:NamedIndividual ,
+                                     martialmotion:MA_style ;
+                            hkmalakg-wiki:styleENName "Tien Shan Pai" ;
+                            hkmalakg-wiki:styleZHName "天山派" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Tien_Shan_Pai" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Tongbeiquan
+hkmalakg-wiki:Tongbeiquan rdf:type owl:NamedIndividual ,
+                                   martialmotion:MA_style ;
+                          hkmalakg-wiki:styleENName "Tongbeiquan" ;
+                          hkmalakg-wiki:styleZHName "通背拳" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Tongbeiquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Victor_Kan
+hkmalakg-wiki:Victor_Kan rdf:type owl:NamedIndividual ,
+                                  martialmotion:Master ;
+                         martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                         hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                         hkmalakg-wiki:personENName "Victor Kan" ;
+                         hkmalakg-wiki:personZHName "簡華捷" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Victor_Kan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wanchai_district
+hkmalakg-wiki:Wanchai_district rdf:type owl:NamedIndividual ,
+                                        martialmotion:Region ;
+                               hkmalakg:placeENName "Wan Chai District" ;
+                               rdfs:comment "https://en.wikipedia.org/wiki/Wan_Chai_District" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#William_Cheung
+hkmalakg-wiki:William_Cheung rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                             hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                             hkmalakg-wiki:personZHName "William Cheung" ,
+                                                        "張卓慶" ;
+                             rdfs:comment "https://en.wikipedia.org/wiki/William_Cheung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wing_Chun
+hkmalakg-wiki:Wing_Chun rdf:type owl:NamedIndividual ,
+                                 martialmotion:MA_style ;
+                        martialmotion:created_by hkmalakg-wiki:Ng_Mui ;
+                        hkmalakg-wiki:styleENName "Wing Chun" ;
+                        hkmalakg-wiki:styleZHName "咏春" ;
+                        rdfs:comment "https://en.wikipedia.org/wiki/Wing_Chun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Fei_Hung
+hkmalakg-wiki:Wong_Fei_Hung rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:has_parent hkmalakg-wiki:Wong_Kei_Ying ;
+                            martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Wong_Kei_Ying ;
+                            hkmalakg-wiki:personENName "Wong Fei Hung" ;
+                            hkmalakg-wiki:personZHName "黄飞鸿" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Wong_Fei-hung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Kei_Ying
+hkmalakg-wiki:Wong_Kei_Ying rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:is_parent_of hkmalakg-wiki:Wong_Fei_Hung ;
+                            martialmotion:practices hkmalakg-wiki:Hung_Kuen ;
+                            hkmalakg:is_master_of hkmalakg-wiki:Wong_Fei_Hung ;
+                            hkmalakg-wiki:personENName "Wong Kei Ying" ;
+                            hkmalakg-wiki:personZHName "黄麒英" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Wong_Kei-ying" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Lee
+hkmalakg-wiki:Wong_Lee rdf:type owl:NamedIndividual ,
+                                martialmotion:Master ;
+                       hkmalakg:is_student_of hkmalakg-wiki:Lam_Sai_Wing ;
+                       hkmalakg-wiki:personENName "Wong Lee" ;
+                       hkmalakg-wiki:personZHName "王利" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Shun_Leung
+hkmalakg-wiki:Wong_Shun_Leung rdf:type owl:NamedIndividual ,
+                                       martialmotion:Master ;
+                              martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                              hkmalakg:is_master_of hkmalakg-wiki:Bruce_Lee ;
+                              hkmalakg:is_student_of hkmalakg-wiki:Ip_Man ;
+                              hkmalakg-wiki:personENName "Wong Shun Leung" ;
+                              hkmalakg-wiki:personZHName "黃淳樑" ;
+                              rdfs:comment "https://en.wikipedia.org/wiki/Wong_Shun-leung" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Siu_Ying
+hkmalakg-wiki:Wong_Siu_Ying rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:is_relative_of hkmalakg-wiki:Chiu_Kau ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Chiu_Kau ;
+                            hkmalakg-wiki:personENName "Wong Siu Ying" ;
+                            hkmalakg-wiki:personZHName "黃邵英" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Wah_Bo
+hkmalakg-wiki:Wong_Wah_Bo rdf:type owl:NamedIndividual ,
+                                   martialmotion:Master ;
+                          martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                          hkmalakg:is_master_of hkmalakg-wiki:Leung_Jan ;
+                          hkmalakg:is_student_of hkmalakg-wiki:Leung_Lan_Kwai ;
+                          hkmalakg-wiki:personENName "Wong Wah Bo" ;
+                          hkmalakg-wiki:personZHName "黃華寶" ;
+                          rdfs:comment "https://en.wikipedia.org/wiki/Wong_Wah-bo" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wong_Yew_Ching
+hkmalakg-wiki:Wong_Yew_Ching rdf:type owl:NamedIndividual ,
+                                      martialmotion:Master ;
+                             martialmotion:practices hkmalakg-wiki:Hung_Kuen ,
+                                                     hkmalakg-wiki:Lingnan_Lam_Family_Hung_Kuen ;
+                             hkmalakg:is_student_of hkmalakg-wiki:Lam_Cho ;
+                             hkmalakg-wiki:personENName "Wong Yew Ching" ;
+                             hkmalakg-wiki:personZHName "黃耀楨" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Woo_Ping_Chiu
+hkmalakg-wiki:Woo_Ping_Chiu rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Tang_Kwok_Wah ;
+                            hkmalakg-wiki:personENName "Woo Ping Chiu" ;
+                            hkmalakg-wiki:personZHName "胡炳超" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Wudang
+hkmalakg-wiki:Wudang rdf:type owl:NamedIndividual ,
+                              martialmotion:MA_style ;
+                     hkmalakg-wiki:styleENName "Wudang Quan" ;
+                     hkmalakg-wiki:styleZHName "武當拳" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Wudang_quan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Xing_Yi_Quan
+hkmalakg-wiki:Xing_Yi_Quan rdf:type owl:NamedIndividual ,
+                                    martialmotion:MA_style ;
+                           hkmalakg-wiki:styleENName "Xing Yi Quan" ;
+                           hkmalakg-wiki:styleZHName "形意拳" ;
+                           rdfs:comment "https://en.wikipedia.org/wiki/Xing_Yi_Quan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Yau_Kung_Moon
+hkmalakg-wiki:Yau_Kung_Moon rdf:type owl:NamedIndividual ,
+                                     martialmotion:MA_style ;
+                            hkmalakg-wiki:styleENName "Yau Kung Moon" ;
+                            hkmalakg-wiki:styleZHName "柔功門" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Yau_Kung_Moon" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Yim_Wing_Chun
+hkmalakg-wiki:Yim_Wing_Chun rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:is_relative_of hkmalakg-wiki:Leung_Bok_Chau ;
+                            martialmotion:practices hkmalakg-wiki:Wing_Chun ;
+                            hkmalakg:is_master_of hkmalakg-wiki:Leung_Bok_Chau ;
+                            hkmalakg:is_student_of hkmalakg-wiki:Ng_Mui ;
+                            hkmalakg-wiki:personENName "Yim Wing Chun" ;
+                            hkmalakg-wiki:personZHName "严咏春" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Yim_Wing-chun" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Yiquan
+hkmalakg-wiki:Yiquan rdf:type owl:NamedIndividual ,
+                              martialmotion:MA_style ;
+                     hkmalakg-wiki:styleENName "Yiquan" ;
+                     hkmalakg-wiki:styleZHName "意拳" ;
+                     rdfs:comment "https://en.wikipedia.org/wiki/Yiquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Yue_Fei
+hkmalakg-wiki:Yue_Fei rdf:type owl:NamedIndividual ,
+                               martialmotion:Master ;
+                      hkmalakg-wiki:creates hkmalakg-wiki:Eagle_Claw ;
+                      hkmalakg-wiki:personENName "Yue Fei" ;
+                      hkmalakg-wiki:personZHName "岳飞" ;
+                      rdfs:comment "https://en.wikipedia.org/wiki/Yue_Fei" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Yuejiaquan
+hkmalakg-wiki:Yuejiaquan rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Yuejiaquan" ;
+                         hkmalakg-wiki:styleZHName "岳家拳" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Yuejiaquan" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Zhao_Kuangyin
+hkmalakg-wiki:Zhao_Kuangyin rdf:type owl:NamedIndividual ,
+                                     martialmotion:Master ;
+                            martialmotion:practices hkmalakg-wiki:Changquan ;
+                            hkmalakg-wiki:creates hkmalakg-wiki:Changquan ;
+                            hkmalakg-wiki:personENName "Zhao Kuangyin" ;
+                            hkmalakg-wiki:personZHName "赵匡胤" ;
+                            rdfs:comment "https://en.wikipedia.org/wiki/Emperor_Taizu_of_Song" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Zhou_Hanxing
+hkmalakg-wiki:Zhou_Hanxing rdf:type owl:NamedIndividual ,
+                                    martialmotion:Master ;
+                           hkmalakg:is_student_of hkmalakg-wiki:Tam_Man ;
+                           hkmalakg-wiki:personENName "Zhou Hanxing" .
+
+
+###  http://EncodingActs.github.io/annotated/hkmalakg_wiki#Zi_Ran_Men
+hkmalakg-wiki:Zi_Ran_Men rdf:type owl:NamedIndividual ,
+                                  martialmotion:MA_style ;
+                         hkmalakg-wiki:styleENName "Zi Ran Men" ;
+                         hkmalakg-wiki:styleZHName "自然门" ;
+                         rdfs:comment "https://en.wikipedia.org/wiki/Zi_Ran_Men" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+martialmotion:Defensive_weapon rdfs:comment """Defensive weapons systems are defined as those that have. a limited range and destruction area and for that reason can (essentially) only be used on one's own territory; offensive weapons systems are all the others. 
+
+Reference: https://journals.sagepub.com/doi/abs/10.1177/002234338402100204?journalCode=jpra"""@en .
+
+
+martialmotion:Flexible_weapon rdfs:comment """Flexible weapons can bend over a block and therefore can still hit the defender.
+
+Data source: https://en.wikipedia.org/wiki/Category:Flexible_weapons"""@en .
+
+
+martialmotion:Melee_weapon rdfs:comment """A melee weapon, hand weapon or close combat weapon is any handheld weapon used in hand-to-hand combat, i.e. for use within the direct physical reach of the weapon itself, essentially functioning as an additional (and more impactful) extension of the user's limbs.
+
+Data source: https://en.wikipedia.org/wiki/Melee_weapon#List_of_melee_weapons"""@en .
+
+
+martialmotion:Ranged_weapon rdfs:comment """A ranged weapon is any weapon that can engage targets beyond hand-to-hand distance, i.e. at distances greater than the physical reach of the user holding the weapon itself. 
+
+Data source: https://en.wikipedia.org/wiki/Ranged_weapon#List_of_ranged_weapons"""@en .
+
+
+martialmotion:Weapon rdfs:comment """Weapons used in the world's martial arts can be classified either by type of weapon or by the martial arts school using them.
+
+Data source example: https://en.wikipedia.org/wiki/List_of_martial_arts_weapons""" .
+
+
+hkmalakg:School_and_Club rdfs:comment "An institution for educating or communicating martial arts."@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
