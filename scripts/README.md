@@ -1,9 +1,5 @@
 # KungfuKG
 
-This is the repo and artistic board for the project "KungfuKG: The Interactive and Explorable Archive Browser for Chinese Martial Arts" in 2021 Fall.
-
-KungfuKG is an [Msc optional project](https://www.epfl.ch/schools/ic/education/master/semester-project-msc/) at [eM+](https://www.epfl.ch/labs/emplus/) directed by Prof. [Sarah Kenderdine](https://sarahkenderdine.info/) and [LSIR](https://www.epfl.ch/labs/lsir/) directed by Prof. [Karl Aberer](https://www.epfl.ch/labs/lsir/prof-karl-aberer/).
-
 ## Table of Contents
 
 - [File Structure](#file-structure)
