@@ -13,6 +13,7 @@
 
 <http://EncodingActs.github.io/MAont/hkmalakg/> rdf:type owl:Ontology ;
                                                 owl:imports ontologies:MA_ont ;
+                                                dct:license <http://creativecommons.org/licenses/by/4.0/> ;
                                                 dct:creator <https://orcid.org/0000-0002-7908-0693> ;
                                                 dct:title "(Martial Arts MAsters Knowledge Graph: Ongology" ;
                                                 rdfs:comment "This is the ontological framework of MA2KG, the Martial Arts MAsters Knowledge Graph."@en .
