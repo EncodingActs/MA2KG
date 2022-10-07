@@ -11,12 +11,15 @@
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
 @base <http://EncodingActs.github.io/MAont/hkmalakg> .
 
-<http://EncodingActs.github.io/MAont/hkmalakg/> rdf:type owl:Ontology ;
-                                                owl:imports ontologies:MA_ont ;
-                                                dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-                                                dct:creator <https://orcid.org/0000-0002-7908-0693> ;
-                                                dct:title "(Martial Arts MAsters Knowledge Graph: Ongology" ;
-                                                rdfs:comment "This is the ontological framework of MA2KG, the Martial Arts MAsters Knowledge Graph."@en .
+<http://EncodingActs.github.io/MAont/hkmalakg/> rdf:type owl:Ontology .
+
+#################################################################
+#     Title: Martial Arts MAsters Knowledge Graph: Ongology
+#     Description: This is the ontological framework of MA2KG, 
+#                  the Martial Arts MAsters Knowledge Graph.
+#     Author: Yumeng HOU (https://orcid.org/0000-0002-7908-0693)
+#     License type: MIT license
+#################################################################
 
 #################################################################
 #    Object Properties

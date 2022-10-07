@@ -10,11 +10,17 @@
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
 @base <http://EncodingActs.github.io/MAont/MAont_base> .
 
-<http://EncodingActs.github.io/MAont/MAont_base/> rdf:type owl:Ontology ;
-                                                dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-                                                dct:creator <https://orcid.org/0000-0002-7908-0693> ;
-                                                dct:title "The Martial Arts ontology: Master Module" ;
-                                                rdfs:comment "This ontological module is to describe the Martial Arts Masters and is extended from the Martial Arts ontology created by CROSSINGS."@en .
+<http://EncodingActs.github.io/MAont/MAont_base/> rdf:type owl:Ontology .
+
+#################################################################
+#     Title: The Martial Arts ontology: Master Module
+#     Description: This ontological module is to describe the 
+#       Martial Arts Masters. The model is extended from the 
+#       Martial Arts ontology created by CROSSINGS.
+#     Author: Yumeng HOU (https://orcid.org/0000-0002-7908-0693)
+#     License type: MIT license
+#################################################################
+
 
 #################################################################
 #    Annotation properties
