@@ -1,4 +1,4 @@
-### MA<sup>2</sup>KG & MAont
+## MA<sup>2</sup>KG & MAont
 
 This project contains the core ontologies, RDF resouces and scripts used for developing the <strong>M</strong>artial <strong>A</strong>rts <strong>MA</strong>sters <strong>K</strong>nowledge <strong>G</strong>raph ( MA<sup>2</sup>KG).
 
