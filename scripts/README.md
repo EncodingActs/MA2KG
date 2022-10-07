@@ -15,22 +15,10 @@
 
 ## File Structure
 
-- `./utils/` includes all the scripts for the utility use
-- `./onts/` includes all ontologies
-  - `./onts/hkmalakg_base.owl` stores an early-stage ontology in preparation phase
-  - `./onts/hkmalakg_wiki.owl` is the developing version of the knowledge base
-- `./imgs/` includes all visualization images for later reference
-- `./acquisition/` includes all the stuff for data acquisition
-- ... 
+- `./utils/` includes the scripts for the utility use
+- `./workflow/` includes the scripts and templates for relevant technical processes
+- `./onts/` please put your ontology files under this folder
 
-
-## Specification
-
-- **Related fields**: Knowledge Graph, Digital Humanities, Intangible Cultural Heritage, Natural Language Processing, Visualization, Human-Computer Interaction
-- **Stages**: Data Acquisition & Integration, **Interface Design** (prefer)
-  Note that we have to first build up the entire pipeline, then decide which stage we are focused on.
-- **Data source**: **Wikipedia**, Baidu Baike, Websites,  Books
-- **MA Ontology**: **master-centric**
 
 ## Usage
 
@@ -42,10 +30,7 @@
 - `Neo4j==4.3`: for storing and managing the knowledge graph data
 - ...
 
-## Sources
-
-Sources record different forms of the related work, data and so on. Each item is briefly commented for later reference.
-
+## Resources
 
 ### Data sources
 
@@ -78,9 +63,6 @@ Sources record different forms of the related work, data and so on. Each item is
 - [HKMALA: The Hong Kong Martial Arts Living Archive](https://www.ichandmuseums.eu/en/inspiration-2/detail-2/the-hong-kong-martial-arts-living-archive)
 
   the digital archive initiated by Sarah, mostly motion capturing data to record different styles and taolu
-
-- ...
-
 
 
 ### Toolkits used
