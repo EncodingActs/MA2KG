@@ -17,7 +17,7 @@
 
 - `./utils/` includes the scripts for the utility use
 - `./workflow/` includes the scripts and templates for relevant technical processes
-- `./onts/` please put your ontology files under this path
+- `./onts/` put your ontology files under this path
 
 
 ## Usage
