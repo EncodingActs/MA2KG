@@ -15,7 +15,7 @@
                                                 dct:license <http://creativecommons.org/licenses/by/4.0/> ;
                                                 dct:creator <https://orcid.org/0000-0002-7908-0693> ;
                                                 dct:title "(Martial Arts MAsters Knowledge Graph: Individuals" ;
-                                                rdfs:comment "This file contains the individuals in the MA2KG *Martial Arts MAsters Knowledge Graph), acquired and integrated from different sources, e.g., Wikipedia, the HKMALA documentation, etc."@en ..
+                                                rdfs:comment "This file contains the individuals in the MA2KG *Martial Arts MAsters Knowledge Graph), acquired and integrated from different sources, e.g., Wikipedia, the HKMALA documentation, etc.".
 
 #################################################################
 #    Annotation properties
