@@ -25,3 +25,6 @@ This folder contains the technical details with ready-to-use scripts for re-prod
 
 #### /doc
 This folder contains the ontology documentation, descriptive of the classes and properties.
+
+### License
+This project is licensed under the terms of the MIT license.
