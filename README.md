@@ -7,7 +7,7 @@ This project contains the core ontologies, RDF resouces and scripts used for dev
 #### /core_ontologies/MAont
 
 The <strong>M</strong>artial <strong>A</strong>rts Ontology (MAont) Version 1.0 describes martial arts as an entity of embodied knowledge (performative culture) in general, which incorporates both technical and cultural perspectives.
-##### Version 1.0 [doc](http://EncodingActs.github.io/doc/extract.html)
+##### Version 1.0 [Doc](http://EncodingActs.github.io/doc/MAont/extract.html)
 
 #### /core_ontologies/hkmalakg
 The ontology, devised from MA_ont, is tuned for describing the archival items in the HKMALA.
