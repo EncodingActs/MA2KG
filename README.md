@@ -15,7 +15,7 @@ The ontology, devised from MA_ont, is tuned for describing the archival items in
 ### Knowledge graph (KG) instantiation
 
 #### /rdf/hkmalakg_wiki.ttl
-The file contains the KG instantiation via acquiring data from multiple yet multilingual sources, e.g., Wikidata, Baidu Baike, Hong Kong Martial Arts Living Archives, manual annotations, etc. Data acquisition was performed based on the aforementioned ontological framework. 
+The file contains the KG instantiation via acquiring data from multiple yet multilingual sources, e.g., Wikidata, Baidu Baike, the Hong Kong Martial Arts Living Archive, manual annotations, etc. Data acquisition was performed based on the aforementioned ontological framework. 
 
 ### Scripts
 
