@@ -1,17 +1,16 @@
-@prefix : <http://EncodingActs.github.io/MAont/hkmalakg/> .
+@prefix MA_ont: <https://purl.org/maont#> .
+@prefix hkmalakg: <https://purl.org/maont/master#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix MA_ont: <http://EncodingActs.github.io/MAont/MAont_base/#> .
-@prefix hkmalakg: <http://EncodingActs.github.io/MAont/hkmalakg/#> .
 @prefix ontologies: <http://www.semanticweb.org/yumeng/ontologies/2021/> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
-@base <http://EncodingActs.github.io/MAont/hkmalakg> .
+@base <https://purl.org/maont/master> .
 
-<http://EncodingActs.github.io/MAont/hkmalakg/> rdf:type owl:Ontology .
+<https://purl.org/maont/master> rdf:type owl:Ontology .
 
 #################################################################
 #     Title: Martial Arts MAsters Knowledge Graph: Ongology
@@ -173,7 +172,7 @@ martialmotion:valid_for rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#belongs_to_system
+###  https://purl.org/maont/master#belongs_to_system
 hkmalakg:belongs_to_system rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf owl:topObjectProperty ;
                            owl:inverseOf hkmalakg:has_style ;
@@ -182,14 +181,14 @@ hkmalakg:belongs_to_system rdf:type owl:ObjectProperty ;
                            rdfs:range martialmotion:MA_system .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#has_style
+###  https://purl.org/maont/master#has_style
 hkmalakg:has_style rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:domain martialmotion:MA_system ;
                    rdfs:range martialmotion:MA_style .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#hyperStyle_of
+###  https://purl.org/maont/master#hyperStyle_of
 hkmalakg:hyperStyle_of rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
                        owl:inverseOf hkmalakg:subStyle_of ;
@@ -199,7 +198,7 @@ hkmalakg:hyperStyle_of rdf:type owl:ObjectProperty ;
                        rdfs:range martialmotion:MA_style .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#hyperSystem_of
+###  https://purl.org/maont/master#hyperSystem_of
 hkmalakg:hyperSystem_of rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf owl:topObjectProperty ;
                         owl:inverseOf hkmalakg:subSystem_of ;
@@ -209,7 +208,7 @@ hkmalakg:hyperSystem_of rdf:type owl:ObjectProperty ;
                         rdfs:range martialmotion:MA_system .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#is_master_of
+###  https://purl.org/maont/master#is_master_of
 hkmalakg:is_master_of rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       owl:inverseOf hkmalakg:is_student_of ;
@@ -219,7 +218,7 @@ hkmalakg:is_master_of rdf:type owl:ObjectProperty ;
                       rdfs:range martialmotion:Master .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#is_student_of
+###  https://purl.org/maont/master#is_student_of
 hkmalakg:is_student_of rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf owl:topObjectProperty ;
                        rdf:type owl:TransitiveProperty ,
@@ -229,7 +228,7 @@ hkmalakg:is_student_of rdf:type owl:ObjectProperty ;
                                   martialmotion:Master .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#locates_in
+###  https://purl.org/maont/master#locates_in
 hkmalakg:locates_in rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdf:type owl:AsymmetricProperty ,
@@ -240,7 +239,7 @@ hkmalakg:locates_in rdf:type owl:ObjectProperty ;
                                hkmalakg:City .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#resides_in
+###  https://purl.org/maont/master#resides_in
 hkmalakg:resides_in rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain martialmotion:Master ;
@@ -249,7 +248,7 @@ hkmalakg:resides_in rdf:type owl:ObjectProperty ;
                                hkmalakg:Site .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#subStyle_of
+###  https://purl.org/maont/master#subStyle_of
 hkmalakg:subStyle_of rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdf:type owl:FunctionalProperty ,
@@ -259,7 +258,7 @@ hkmalakg:subStyle_of rdf:type owl:ObjectProperty ;
                      rdfs:range martialmotion:MA_style .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#subSystem_of
+###  https://purl.org/maont/master#subSystem_of
 hkmalakg:subSystem_of rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdf:type owl:FunctionalProperty ,
@@ -269,12 +268,12 @@ hkmalakg:subSystem_of rdf:type owl:ObjectProperty ;
                       rdfs:range martialmotion:MA_system .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#sworn_brothers
+###  https://purl.org/maont/master#sworn_brothers
 hkmalakg:sworn_brothers rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#uses
+###  https://purl.org/maont/master#uses
 hkmalakg:uses rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty .
 
@@ -289,113 +288,113 @@ owl:topObjectProperty rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_family_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_family_name> rdf:type owl:DatatypeProperty ;
-                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> ;
+###  https://purl.org/maont/master#EN_family_name
+<https://purl.org/maont/master#EN_family_name> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <https://purl.org/maont/master#EN_name> ;
                                                                                         rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_first_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_first_name> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> .
+###  https://purl.org/maont/master#EN_first_name
+<https://purl.org/maont/master#EN_first_name> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <https://purl.org/maont/master#EN_name> .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_middle_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_middle_name> rdf:type owl:DatatypeProperty ;
-                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> .
+###  https://purl.org/maont/master#EN_middle_name
+<https://purl.org/maont/master#EN_middle_name> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <https://purl.org/maont/master#EN_name> .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#EN_name> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#EN_name
+<https://purl.org/maont/master#EN_name> rdf:type owl:DatatypeProperty ;
                                                                                  rdfs:subPropertyOf hkmalakg:personAppelation ;
                                                                                  rdfs:range xsd:Name ,
                                                                                             xsd:string .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#art_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#art_name> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#art_name
+<https://purl.org/maont/master#art_name> rdf:type owl:DatatypeProperty ;
                                                                                   rdfs:subPropertyOf hkmalakg:personAppelation .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#family_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#family_name> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#family_name
+<https://purl.org/maont/master#family_name> rdf:type owl:DatatypeProperty ;
                                                                                      rdfs:subPropertyOf hkmalakg:full_name .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#first_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#first_name> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#first_name
+<https://purl.org/maont/master#first_name> rdf:type owl:DatatypeProperty ;
                                                                                     rdfs:subPropertyOf hkmalakg:full_name .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#middle_name
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#middle_name> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#middle_name
+<https://purl.org/maont/master#middle_name> rdf:type owl:DatatypeProperty ;
                                                                                      rdfs:subPropertyOf hkmalakg:full_name .
 
 
-###  http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#name_language
-<http://www.semanticweb.org/yumen/ontologies/2021/7/untitled-ontology-4#name_language> rdf:type owl:DatatypeProperty ;
+###  https://purl.org/maont/master#name_language
+<https://purl.org/maont/master#name_language> rdf:type owl:DatatypeProperty ;
                                                                                        rdfs:subPropertyOf hkmalakg:full_name ;
                                                                                        rdfs:range xsd:language .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#featureID
+###  https://purl.org/maont/master#featureID
 hkmalakg:featureID rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#fileDescription
+###  https://purl.org/maont/master#fileDescription
 hkmalakg:fileDescription rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#filePath
+###  https://purl.org/maont/master#filePath
 hkmalakg:filePath rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#fileProduceDate
+###  https://purl.org/maont/master#fileProduceDate
 hkmalakg:fileProduceDate rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#fileProducer
+###  https://purl.org/maont/master#fileProducer
 hkmalakg:fileProducer rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#full_name
+###  https://purl.org/maont/master#full_name
 hkmalakg:full_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf hkmalakg:personAppelation .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personAppelation
+###  https://purl.org/maont/master#personAppelation
 hkmalakg:personAppelation rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personBiography
+###  https://purl.org/maont/master#personBiography
 hkmalakg:personBiography rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personBirthday
+###  https://purl.org/maont/master#personBirthday
 hkmalakg:personBirthday rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personBirthplace
+###  https://purl.org/maont/master#personBirthplace
 hkmalakg:personBirthplace rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personDeathday
+###  https://purl.org/maont/master#personDeathday
 hkmalakg:personDeathday rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#personGender
+###  https://purl.org/maont/master#personGender
 hkmalakg:personGender rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#placeDescription
+###  https://purl.org/maont/master#placeDescription
 hkmalakg:placeDescription rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#placeENName
+###  https://purl.org/maont/master#placeENName
 hkmalakg:placeENName rdf:type owl:DatatypeProperty .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#placeLocation
+###  https://purl.org/maont/master#placeLocation
 hkmalakg:placeLocation rdf:type owl:DatatypeProperty .
 
 
@@ -619,44 +618,44 @@ martialmotion:Whip rdf:type owl:Class ;
                    rdfs:subClassOf martialmotion:Flexible_weapon .
 
 
-###  http://EncodingActs.github.io/MAont/MAont_base/#MA_institute
+###  https://purl.org/maont#MA_institute
 MA_ont:MA_institute owl:equivalentClass hkmalakg:School_and_Club ;
                     rdfs:subClassOf martialmotion:MA_Community .
 
 
-###  http://EncodingActs.github.io/MAont/MAont_base/#MA_style
+###  https://purl.org/maont#MA_style
 
-###  http://EncodingActs.github.io/MAont/MAont_base/#MA_system
+###  https://purl.org/maont#MA_system
 
-###  http://EncodingActs.github.io/MAont/MAont_base/#Master
+###  https://purl.org/maont#Master
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#Association
+###  https://purl.org/maont/master#Association
 hkmalakg:Association rdf:type owl:Class ;
                      rdfs:subClassOf martialmotion:MA_Community .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#City
+###  https://purl.org/maont/master#City
 hkmalakg:City rdf:type owl:Class ;
               rdfs:subClassOf ontologies:E53_Place ;
               owl:disjointWith hkmalakg:Site .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#Clan
+###  https://purl.org/maont/master#Clan
 hkmalakg:Clan rdf:type owl:Class ;
               rdfs:subClassOf martialmotion:MA_Community .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#School_and_Club
+###  https://purl.org/maont/master#School_and_Club
 hkmalakg:School_and_Club rdf:type owl:Class ;
                          rdfs:subClassOf martialmotion:MA_Community .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#Site
+###  https://purl.org/maont/master#Site
 hkmalakg:Site rdf:type owl:Class ;
               rdfs:subClassOf ontologies:E53_Place .
 
 
-###  http://EncodingActs.github.io/MAont/hkmalakg/#Temple_and_Sect
+###  https://purl.org/maont/master#Temple_and_Sect
 hkmalakg:Temple_and_Sect rdf:type owl:Class ;
                          rdfs:subClassOf martialmotion:MA_Community .
 
