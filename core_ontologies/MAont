@@ -5,7 +5,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ontologies: <https://purl.org/maont#> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
 @base <https://purl.org/maont> .
 
@@ -26,29 +25,29 @@
 #################################################################
 
 ###  https://purl.org/maont#name_zhHK
-ontologies:name_zhHK rdf:type owl:AnnotationProperty ;
+MA_ont:name_zhHK rdf:type owl:AnnotationProperty ;
                                    rdfs:label "name_zhHK" .
 
 
 ###  https://purl.org/maont#BaiduURL
-ontologies:BaiduURL rdf:type owl:AnnotationProperty ;
+MA_ont:BaiduURL rdf:type owl:AnnotationProperty ;
                                    rdfs:label "BaiduURL" .
 
 
 
 
 ###  https://purl.org/maont#RDs2xTVp0k0L8mGtMLKamua
-ontologies:RDs2xTVp0k0L8mGtMLKamua rdf:type owl:AnnotationProperty ;
+MA_ont:RDs2xTVp0k0L8mGtMLKamua rdf:type owl:AnnotationProperty ;
                                    rdfs:label "otherName_en" .
 
 
 ###  https://purl.org/maont#otherName_zh
-ontologies:otherName_zh rdf:type owl:AnnotationProperty ;
+MA_ont:otherName_zh rdf:type owl:AnnotationProperty ;
                                   rdfs:label "otherName_zh" .
 
 
 ###  https://purl.org/maont#wikiURL
-ontologies:wikiURL rdf:type owl:AnnotationProperty ;
+MA_ont:wikiURL rdf:type owl:AnnotationProperty ;
                                   rdfs:label "wikiURL"^^xsd:string .
 
 
@@ -66,217 +65,217 @@ skos:altLabel rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://purl.org/maont#influenced_by
-ontologies:influenced_by rdf:type owl:ObjectProperty ;
+MA_ont:influenced_by rdf:type owl:ObjectProperty ;
                                   rdfs:label "influenced_by" .
 
 
 ###  https://purl.org/maont#belongs_to
-ontologies:belongs_to rdf:type owl:ObjectProperty ;
+MA_ont:belongs_to rdf:type owl:ObjectProperty ;
                       rdfs:label "belongs_to" .
 
 
 ###  https://purl.org/maont#creates
-ontologies:creates rdf:type owl:ObjectProperty ;
+MA_ont:creates rdf:type owl:ObjectProperty ;
                    rdfs:label "creates" .
 
 
 ###  https://purl.org/maont#descendant_of
-ontologies:descendant_of rdf:type owl:ObjectProperty ;
+MA_ont:descendant_of rdf:type owl:ObjectProperty ;
                          rdfs:label "descendant_of"^^xsd:string .
 
 
 ###  https://purl.org/maont#describes
-ontologies:describes rdf:type owl:ObjectProperty ;
+MA_ont:describes rdf:type owl:ObjectProperty ;
                      rdfs:label "describes" .
 
 
 ###  https://purl.org/maont#detected_in
-ontologies:detected_in rdf:type owl:ObjectProperty ;
+MA_ont:detected_in rdf:type owl:ObjectProperty ;
                        rdfs:label "detected_in" .
 
 
 ###  https://purl.org/maont#documents
-ontologies:documents rdf:type owl:ObjectProperty ;
+MA_ont:documents rdf:type owl:ObjectProperty ;
                      rdfs:label "documents" .
 
 
 ###  https://purl.org/maont#employs
-ontologies:employs rdf:type owl:ObjectProperty ;
+MA_ont:employs rdf:type owl:ObjectProperty ;
                    rdfs:label "employs" .
 
 
 ###  https://purl.org/maont#encodes
-ontologies:encodes rdf:type owl:ObjectProperty ;
+MA_ont:encodes rdf:type owl:ObjectProperty ;
                    rdfs:label "encodes" .
 
 
 ###  https://purl.org/maont#has
-ontologies:has rdf:type owl:ObjectProperty ;
+MA_ont:has rdf:type owl:ObjectProperty ;
                rdfs:label "has" .
 
 
 ###  https://purl.org/maont#has_feature
-ontologies:has_feature rdf:type owl:ObjectProperty ;
+MA_ont:has_feature rdf:type owl:ObjectProperty ;
                        rdfs:label "has_feature" .
 
 
 ###  https://purl.org/maont#has_origin_place
-ontologies:has_origin_place rdf:type owl:ObjectProperty ;
+MA_ont:has_origin_place rdf:type owl:ObjectProperty ;
                             rdfs:label "has_origin_place" .
 
 
 ###  https://purl.org/maont#homologous_with
-ontologies:homologous_with rdf:type owl:ObjectProperty ;
+MA_ont:homologous_with rdf:type owl:ObjectProperty ;
                            rdfs:label "homologous_with" .
 
 
 ###  https://purl.org/maont#identified_by
-ontologies:identified_by rdf:type owl:ObjectProperty ;
+MA_ont:identified_by rdf:type owl:ObjectProperty ;
                          rdfs:label "identified_by" .
 
 
 ###  https://purl.org/maont#is_child_of
-ontologies:is_child_of rdf:type owl:ObjectProperty ;
+MA_ont:is_child_of rdf:type owl:ObjectProperty ;
                        rdfs:label "is_child_of" .
 
 
 ###  https://purl.org/maont#is_clan_member_of
-ontologies:is_clan_member_of rdf:type owl:ObjectProperty ;
+MA_ont:is_clan_member_of rdf:type owl:ObjectProperty ;
                              rdfs:label "is_clan_member_of" .
 
 
 ###  https://purl.org/maont#is_master_of
-ontologies:is_master_of rdf:type owl:ObjectProperty ;
+MA_ont:is_master_of rdf:type owl:ObjectProperty ;
                         rdfs:label "is_master_of" .
 
 
 ###  https://purl.org/maont#is_parent_of
-ontologies:is_parent_of rdf:type owl:ObjectProperty ;
+MA_ont:is_parent_of rdf:type owl:ObjectProperty ;
                         rdfs:label "is_parent_of" .
 
 
 ###  https://purl.org/maont#is_student_of
-ontologies:is_student_of rdf:type owl:ObjectProperty ;
+MA_ont:is_student_of rdf:type owl:ObjectProperty ;
                          rdfs:label "is_student_of" .
 
 
 ###  https://purl.org/maont#lives_in
-ontologies:lives_in rdf:type owl:ObjectProperty ;
+MA_ont:lives_in rdf:type owl:ObjectProperty ;
                     rdfs:label "lives_in" .
 
 
 ###  https://purl.org/maont#located_at
-ontologies:located_at rdf:type owl:ObjectProperty ;
+MA_ont:located_at rdf:type owl:ObjectProperty ;
                       rdfs:label "located_at"^^xsd:string .
 
 
 ###  https://purl.org/maont#part_of
-ontologies:part_of rdf:type owl:ObjectProperty ;
+MA_ont:part_of rdf:type owl:ObjectProperty ;
                    rdfs:label "part_of" .
 
 
 ###  https://purl.org/maont#performed_by
-ontologies:performed_by rdf:type owl:ObjectProperty ;
+MA_ont:performed_by rdf:type owl:ObjectProperty ;
                         rdfs:label "performed_by" .
 
 
 ###  https://purl.org/maont#portrait_of
-ontologies:portrait_of rdf:type owl:ObjectProperty ;
+MA_ont:portrait_of rdf:type owl:ObjectProperty ;
                        rdfs:label "portrait_of" .
 
 
 ###  https://purl.org/maont#practiced_in
-ontologies:practiced_in rdf:type owl:ObjectProperty ;
+MA_ont:practiced_in rdf:type owl:ObjectProperty ;
                         rdfs:label "practiced_in" .
 
 
 ###  https://purl.org/maont#practices
-ontologies:practices rdf:type owl:ObjectProperty ;
+MA_ont:practices rdf:type owl:ObjectProperty ;
                      rdfs:label "practices" .
 
 
 ###  https://purl.org/maont#recognized_in
-ontologies:recognized_in rdf:type owl:ObjectProperty ;
+MA_ont:recognized_in rdf:type owl:ObjectProperty ;
                          rdfs:label "recognized_in" .
 
 
 ###  https://purl.org/maont#records
-ontologies:records rdf:type owl:ObjectProperty ;
+MA_ont:records rdf:type owl:ObjectProperty ;
                    rdfs:label "records" .
 
 
 ###  https://purl.org/maont#represented_by
-ontologies:represented_by rdf:type owl:ObjectProperty ;
+MA_ont:represented_by rdf:type owl:ObjectProperty ;
                           rdfs:label "represented_by" .
 
 
 ###  https://purl.org/maont#requires
-ontologies:requires rdf:type owl:ObjectProperty ;
+MA_ont:requires rdf:type owl:ObjectProperty ;
                     rdfs:label "requires" .
 
 
 ###  https://purl.org/maont#resides_in
-ontologies:resides_in rdf:type owl:ObjectProperty ;
+MA_ont:resides_in rdf:type owl:ObjectProperty ;
                       rdfs:label "resides_in" .
 
 
 ###  https://purl.org/maont#substyle_of
-ontologies:substyle_of rdf:type owl:ObjectProperty ;
+MA_ont:substyle_of rdf:type owl:ObjectProperty ;
                        rdfs:label "substyle_of" .
 
 
 ###  https://purl.org/maont#symbolized_by
-ontologies:symbolized_by rdf:type owl:ObjectProperty ;
+MA_ont:symbolized_by rdf:type owl:ObjectProperty ;
                          rdfs:label "symbolized_by" .
 
 
 ###  https://purl.org/maont#taught_at
-ontologies:taught_at rdf:type owl:ObjectProperty ;
+MA_ont:taught_at rdf:type owl:ObjectProperty ;
                      rdfs:label "taught_at"^^xsd:string .
 
 
 ###  https://purl.org/maont#taught_by
-ontologies:taught_by rdf:type owl:ObjectProperty ;
+MA_ont:taught_by rdf:type owl:ObjectProperty ;
                      rdfs:label "taught_by"^^xsd:string .
 
 
 ###  https://purl.org/maont#teaches
-ontologies:teaches rdf:type owl:ObjectProperty ;
+MA_ont:teaches rdf:type owl:ObjectProperty ;
                    rdfs:label "teaches" .
 
 
 ###  https://purl.org/maont#teaches_at
-ontologies:teaches_at rdf:type owl:ObjectProperty ;
+MA_ont:teaches_at rdf:type owl:ObjectProperty ;
                       rdfs:label "teaches_at" .
 
 
 ###  https://purl.org/maont#title_of
-ontologies:title_of rdf:type owl:ObjectProperty ;
+MA_ont:title_of rdf:type owl:ObjectProperty ;
                     rdfs:label "title_of" .
 
 
 ###  https://purl.org/maont#trains
-ontologies:trains rdf:type owl:ObjectProperty ;
+MA_ont:trains rdf:type owl:ObjectProperty ;
                   rdfs:label "trains" .
 
 
 ###  https://purl.org/maont#type_of
-ontologies:type_of rdf:type owl:ObjectProperty ;
+MA_ont:type_of rdf:type owl:ObjectProperty ;
                    rdfs:label "type_of" .
 
 
 ###  https://purl.org/maont#uses
-ontologies:uses rdf:type owl:ObjectProperty ;
+MA_ont:uses rdf:type owl:ObjectProperty ;
                 rdfs:label "uses" .
 
 
 ###  https://purl.org/maont#valid_for
-ontologies:valid_for rdf:type owl:ObjectProperty ;
+MA_ont:valid_for rdf:type owl:ObjectProperty ;
                      rdfs:label "valid_for" .
 
 
 ###  https://purl.org/maont#with
-ontologies:with rdf:type owl:ObjectProperty ;
+MA_ont:with rdf:type owl:ObjectProperty ;
                 rdfs:label "with" .
 
 
@@ -285,7 +284,7 @@ ontologies:with rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  https://purl.org/maont#MAonto_v1
-ontologies:MAonto_v1 rdf:type owl:DatatypeProperty .
+MA_ont:MAonto_v1 rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -293,76 +292,76 @@ ontologies:MAonto_v1 rdf:type owl:DatatypeProperty .
 #################################################################
 
 ###  https://purl.org/maont#E21_Person
-ontologies:E21_Person rdf:type owl:Class ;
+MA_ont:E21_Person rdf:type owl:Class ;
                       rdfs:subClassOf owl:Thing ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty ontologies:creates ;
-                                        owl:someValuesFrom ontologies:E22_Man-made_object
+                                        owl:onProperty MA_ont:creates ;
+                                        owl:someValuesFrom MA_ont:E22_Man-made_object
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty ontologies:identified_by ;
-                                        owl:someValuesFrom ontologies:E41_Appellation
+                                        owl:onProperty MA_ont:identified_by ;
+                                        owl:someValuesFrom MA_ont:E41_Appellation
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty ontologies:lives_in ;
-                                        owl:someValuesFrom ontologies:E52_Time-Span
+                                        owl:onProperty MA_ont:lives_in ;
+                                        owl:someValuesFrom MA_ont:E52_Time-Span
                                       ] ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty ontologies:resides_in ;
-                                        owl:someValuesFrom ontologies:E53_Place
+                                        owl:onProperty MA_ont:resides_in ;
+                                        owl:someValuesFrom MA_ont:E53_Place
                                       ] ;
                       rdfs:label "E21. Person" .
 
 
 ###  https://purl.org/maont#E22_Man-made_object
-ontologies:E22_Man-made_object rdf:type owl:Class ;
+MA_ont:E22_Man-made_object rdf:type owl:Class ;
                                rdfs:label "E22. Man-made Object" .
 
 
 ###  https://purl.org/maont#E25_Human-Made_Feature
-ontologies:E25_Human-Made_Feature rdf:type owl:Class ;
+MA_ont:E25_Human-Made_Feature rdf:type owl:Class ;
                                   rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E25_Human-Made_Feature> .
 
 
 ###  https://purl.org/maont#E31_Document
-ontologies:E31_Document rdf:type owl:Class ;
-                        rdfs:subClassOf ontologies:E73_Information_Object ;
+MA_ont:E31_Document rdf:type owl:Class ;
+                        rdfs:subClassOf MA_ont:E73_Information_Object ;
                         rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E31_Document> .
 
 
 ###  https://purl.org/maont#E41_Appellation
-ontologies:E41_Appellation rdf:type owl:Class ;
-                           rdfs:subClassOf ontologies:E90_Symbolic_Object ;
+MA_ont:E41_Appellation rdf:type owl:Class ;
+                           rdfs:subClassOf MA_ont:E90_Symbolic_Object ;
                            rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E41_Appellation> .
 
 
 ###  https://purl.org/maont#E52_Time-Span
-ontologies:E52_Time-Span rdf:type owl:Class ;
+MA_ont:E52_Time-Span rdf:type owl:Class ;
                          rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E52_Time-Span> .
 
 
 ###  https://purl.org/maont#E53_Place
-ontologies:E53_Place rdf:type owl:Class ;
+MA_ont:E53_Place rdf:type owl:Class ;
                      rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E53_Place> .
 
 
 ###  https://purl.org/maont#E73_Information_Object
-ontologies:E73_Information_Object rdf:type owl:Class ;
+MA_ont:E73_Information_Object rdf:type owl:Class ;
                                   rdfs:label "E73_Information_Object" .
 
 
 ###  https://purl.org/maont#E90_Symbolic_Object
-ontologies:E90_Symbolic_Object rdf:type owl:Class ;
-                               rdfs:subClassOf ontologies:E73_Information_Object ;
+MA_ont:E90_Symbolic_Object rdf:type owl:Class ;
+                               rdfs:subClassOf MA_ont:E73_Information_Object ;
                                rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E90_Symbolic_Object> .
 
 
 ###  https://purl.org/maont#Armament
 MA_ont:Armament rdf:type owl:Class ;
-                rdfs:subClassOf ontologies:E22_Man-made_object ,
+                rdfs:subClassOf MA_ont:E22_Man-made_object ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
-                                  owl:someValuesFrom ontologies:E22_Man-made_object
+                                  owl:onProperty MA_ont:type_of ;
+                                  owl:someValuesFrom MA_ont:E22_Man-made_object
                                 ] ;
                 rdfs:label "Armament"^^xsd:string .
 
@@ -381,11 +380,11 @@ MA_ont:E7_Activity rdf:type owl:Class ;
 MA_ont:Fundamental rdf:type owl:Class ;
                    rdfs:subClassOf MA_ont:MA_Technique ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty ontologies:represented_by ;
-                                     owl:someValuesFrom ontologies:E25_Human-Made_Feature
+                                     owl:onProperty MA_ont:represented_by ;
+                                     owl:someValuesFrom MA_ont:E25_Human-Made_Feature
                                    ] ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty ontologies:type_of ;
+                                     owl:onProperty MA_ont:type_of ;
                                      owl:someValuesFrom MA_ont:MA_Technique
                                    ] ;
                    rdfs:label "Fundamental_technique"^^xsd:string .
@@ -393,15 +392,15 @@ MA_ont:Fundamental rdf:type owl:Class ;
 
 ###  https://purl.org/maont#Grading_sys
 MA_ont:Grading_sys rdf:type owl:Class ;
-                  rdfs:subClassOf ontologies:E73_Information_Object ;
+                  rdfs:subClassOf MA_ont:E73_Information_Object ;
                   rdfs:label "Grading_system"^^xsd:string .
 
 
 ###  https://purl.org/maont#Image
 MA_ont:Image rdf:type owl:Class ;
-             rdfs:subClassOf ontologies:E73_Information_Object ,
+             rdfs:subClassOf MA_ont:E73_Information_Object ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:portrait_of ;
+                               owl:onProperty MA_ont:portrait_of ;
                                owl:someValuesFrom MA_ont:Master
                              ] ;
              rdfs:label "Image" .
@@ -417,35 +416,35 @@ MA_ont:Jin rdf:type owl:Class ;
 MA_ont:MA_Technique rdf:type owl:Class ;
                     rdfs:subClassOf MA_ont:P33_used_specific_technique ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:employs ;
+                                      owl:onProperty MA_ont:employs ;
                                       owl:someValuesFrom MA_ont:bodytech
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:employs ;
+                                      owl:onProperty MA_ont:employs ;
                                       owl:someValuesFrom MA_ont:footwork
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:employs ;
+                                      owl:onProperty MA_ont:employs ;
                                       owl:someValuesFrom MA_ont:handwork
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:homologous_with ;
+                                      owl:onProperty MA_ont:homologous_with ;
                                       owl:someValuesFrom MA_ont:MA_Technique
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:practiced_in ;
+                                      owl:onProperty MA_ont:practiced_in ;
                                       owl:someValuesFrom MA_ont:MA_taolu
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:symbolized_by ;
-                                      owl:someValuesFrom ontologies:E90_Symbolic_Object
+                                      owl:onProperty MA_ont:symbolized_by ;
+                                      owl:someValuesFrom MA_ont:E90_Symbolic_Object
                                     ] ;
                     rdfs:label "MA_Technique" .
 
 
 ###  https://purl.org/maont#MA_book
 MA_ont:MA_book rdf:type owl:Class ;
-               rdfs:subClassOf ontologies:E31_Document ;
+               rdfs:subClassOf MA_ont:E31_Document ;
                rdfs:label "MA_book"^^xsd:string .
 
 
@@ -457,37 +456,37 @@ MA_ont:MA_institute rdf:type owl:Class .
 MA_ont:MA_style rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:belongs_to ;
+                                  owl:onProperty MA_ont:belongs_to ;
                                   owl:someValuesFrom MA_ont:MA_system
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:descendant_of ;
+                                  owl:onProperty MA_ont:descendant_of ;
                                   owl:someValuesFrom MA_ont:MA_style
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:has ;
+                                  owl:onProperty MA_ont:has ;
                                   owl:someValuesFrom MA_ont:MA_Technique
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:has ;
+                                  owl:onProperty MA_ont:has ;
                                   owl:someValuesFrom MA_ont:MA_taolu
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:has_origin_place ;
-                                  owl:someValuesFrom ontologies:E53_Place
+                                  owl:onProperty MA_ont:has_origin_place ;
+                                  owl:someValuesFrom MA_ont:E53_Place
                                 ] ;
                 rdfs:label "MA_style"^^xsd:string .
 
 
 ###  https://purl.org/maont#MA_syllabus
 MA_ont:MA_syllabus rdf:type owl:Class ;
-                   rdfs:subClassOf ontologies:E73_Information_Object ,
+                   rdfs:subClassOf MA_ont:E73_Information_Object ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty ontologies:employs ;
+                                     owl:onProperty MA_ont:employs ;
                                      owl:someValuesFrom MA_ont:MA_training_method
                                    ] ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty ontologies:valid_for ;
+                                     owl:onProperty MA_ont:valid_for ;
                                      owl:someValuesFrom MA_ont:Grading_sys
                                    ] ;
                    rdfs:label "MA_syllabus"^^xsd:string .
@@ -497,8 +496,8 @@ MA_ont:MA_syllabus rdf:type owl:Class ;
 MA_ont:MA_system rdf:type owl:Class ;
                  rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty ontologies:has_origin_place ;
-                                   owl:someValuesFrom ontologies:E53_Place
+                                   owl:onProperty MA_ont:has_origin_place ;
+                                   owl:someValuesFrom MA_ont:E53_Place
                                  ] ;
                  rdfs:label <http://semanticweb.org/ont/martialmotion#MA_system> .
 
@@ -507,15 +506,15 @@ MA_ont:MA_system rdf:type owl:Class ;
 MA_ont:MA_taolu rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:MA_training_method ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:practiced_in ;
+                                  owl:onProperty MA_ont:practiced_in ;
                                   owl:someValuesFrom MA_ont:MA_style
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
-                                  owl:someValuesFrom ontologies:E73_Information_Object
+                                  owl:onProperty MA_ont:type_of ;
+                                  owl:someValuesFrom MA_ont:E73_Information_Object
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
+                                  owl:onProperty MA_ont:type_of ;
                                   owl:someValuesFrom MA_ont:MA_training_method
                                 ] ;
                 rdfs:label "Taolu"^^xsd:string ;
@@ -527,23 +526,23 @@ MA_ont:MA_taolu rdf:type owl:Class ;
 MA_ont:MA_training_method rdf:type owl:Class ;
                           rdfs:subClassOf owl:Thing ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty ontologies:employs ;
+                                            owl:onProperty MA_ont:employs ;
                                             owl:someValuesFrom MA_ont:Armament
                                           ] ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty ontologies:employs ;
+                                            owl:onProperty MA_ont:employs ;
                                             owl:someValuesFrom MA_ont:Training_tool
                                           ] ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty ontologies:part_of ;
+                                            owl:onProperty MA_ont:part_of ;
                                             owl:someValuesFrom MA_ont:MA_syllabus
                                           ] ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty ontologies:trains ;
+                                            owl:onProperty MA_ont:trains ;
                                             owl:someValuesFrom MA_ont:MA_Technique
                                           ] ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty ontologies:uses ;
+                                            owl:onProperty MA_ont:uses ;
                                             owl:someValuesFrom MA_ont:MA_book
                                           ] ;
                           rdfs:label "Training_method"^^xsd:string .
@@ -553,27 +552,27 @@ MA_ont:MA_training_method rdf:type owl:Class ;
 MA_ont:Martial_arts rdf:type owl:Class ;
                     rdfs:subClassOf MA_ont:E7_Activity ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:has ;
+                                      owl:onProperty MA_ont:has ;
                                       owl:someValuesFrom MA_ont:MA_Technique
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:has ;
+                                      owl:onProperty MA_ont:has ;
                                       owl:someValuesFrom MA_ont:MA_style
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:has ;
+                                      owl:onProperty MA_ont:has ;
                                       owl:someValuesFrom MA_ont:MA_syllabus
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:has ;
+                                      owl:onProperty MA_ont:has ;
                                       owl:someValuesFrom MA_ont:MA_system
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:taught_at ;
+                                      owl:onProperty MA_ont:taught_at ;
                                       owl:someValuesFrom MA_ont:MA_institute
                                     ] ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontologies:taught_by ;
+                                      owl:onProperty MA_ont:taught_by ;
                                       owl:someValuesFrom MA_ont:Master
                                     ] ;
                     rdfs:label "Martial_arts" ;
@@ -583,65 +582,65 @@ MA_ont:Martial_arts rdf:type owl:Class ;
 
 ###  https://purl.org/maont#Master
 MA_ont:Master rdf:type owl:Class ;
-              rdfs:subClassOf ontologies:E21_Person ,
+              rdfs:subClassOf MA_ont:E21_Person ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:creates ;
+                                owl:onProperty MA_ont:creates ;
                                 owl:someValuesFrom MA_ont:Armament
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:creates ;
+                                owl:onProperty MA_ont:creates ;
                                 owl:someValuesFrom MA_ont:MA_Technique
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:creates ;
+                                owl:onProperty MA_ont:creates ;
                                 owl:someValuesFrom MA_ont:MA_training_method
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:creates ;
+                                owl:onProperty MA_ont:creates ;
                                 owl:someValuesFrom MA_ont:Training_tool
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:is_child_of ;
+                                owl:onProperty MA_ont:is_child_of ;
                                 owl:someValuesFrom MA_ont:Master
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:is_clan_member_of ;
+                                owl:onProperty MA_ont:is_clan_member_of ;
                                 owl:someValuesFrom MA_ont:Master
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:is_master_of ;
+                                owl:onProperty MA_ont:is_master_of ;
                                 owl:someValuesFrom MA_ont:Master
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:is_parent_of ;
+                                owl:onProperty MA_ont:is_parent_of ;
                                 owl:someValuesFrom MA_ont:Master
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:is_student_of ;
+                                owl:onProperty MA_ont:is_student_of ;
                                 owl:someValuesFrom MA_ont:Master
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:practices ;
+                                owl:onProperty MA_ont:practices ;
                                 owl:someValuesFrom MA_ont:MA_style
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:practices ;
+                                owl:onProperty MA_ont:practices ;
                                 owl:someValuesFrom MA_ont:Martial_arts
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:teaches ;
+                                owl:onProperty MA_ont:teaches ;
                                 owl:someValuesFrom MA_ont:MA_training_method
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:teaches_at ;
+                                owl:onProperty MA_ont:teaches_at ;
                                 owl:someValuesFrom MA_ont:MA_institute
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:title_of ;
-                                owl:someValuesFrom ontologies:E21_Person
+                                owl:onProperty MA_ont:title_of ;
+                                owl:someValuesFrom MA_ont:E21_Person
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty ontologies:uses ;
+                                owl:onProperty MA_ont:uses ;
                                 owl:someValuesFrom MA_ont:Armament
                               ] ;
               rdfs:label <http://semanticweb.org/ont/martialmotion#Master> ,
@@ -650,17 +649,17 @@ MA_ont:Master rdf:type owl:Class ;
 
 ###  https://purl.org/maont#MoCap
 MA_ont:MoCap rdf:type owl:Class ;
-             rdfs:subClassOf ontologies:E31_Document ,
+             rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:performed_by ;
+                               owl:onProperty MA_ont:performed_by ;
                                owl:someValuesFrom MA_ont:Master
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:records ;
+                               owl:onProperty MA_ont:records ;
                                owl:someValuesFrom MA_ont:MA_Technique
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:records ;
+                               owl:onProperty MA_ont:records ;
                                owl:someValuesFrom MA_ont:MA_style
                              ] ;
              rdfs:label "Motion_capture" .
@@ -684,9 +683,9 @@ MA_ont:Strength_training rdf:type owl:Class ;
 
 ###  https://purl.org/maont#Texts
 MA_ont:Texts rdf:type owl:Class ;
-             rdfs:subClassOf ontologies:E31_Document ,
+             rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:describes ;
+                               owl:onProperty MA_ont:describes ;
                                owl:someValuesFrom MA_ont:Master
                              ] ;
              rdfs:label "Text_doc" .
@@ -694,13 +693,13 @@ MA_ont:Texts rdf:type owl:Class ;
 
 ###  https://purl.org/maont#Training_tool
 MA_ont:Training_tool rdf:type owl:Class ;
-                     rdfs:subClassOf ontologies:E22_Man-made_object ,
+                     rdfs:subClassOf MA_ont:E22_Man-made_object ,
                                      [ rdf:type owl:Restriction ;
-                                       owl:onProperty ontologies:type_of ;
-                                       owl:someValuesFrom ontologies:E22_Man-made_object
+                                       owl:onProperty MA_ont:type_of ;
+                                       owl:someValuesFrom MA_ont:E22_Man-made_object
                                      ] ,
                                      [ rdf:type owl:Restriction ;
-                                       owl:onProperty ontologies:type_of ;
+                                       owl:onProperty MA_ont:type_of ;
                                        owl:someValuesFrom MA_ont:Armament
                                      ] ;
                      rdfs:label "Trainig_tool"^^xsd:string .
@@ -708,17 +707,17 @@ MA_ont:Training_tool rdf:type owl:Class ;
 
 ###  https://purl.org/maont#Video
 MA_ont:Video rdf:type owl:Class ;
-             rdfs:subClassOf ontologies:E31_Document ,
+             rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:performed_by ;
+                               owl:onProperty MA_ont:performed_by ;
                                owl:someValuesFrom MA_ont:Master
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:records ;
+                               owl:onProperty MA_ont:records ;
                                owl:someValuesFrom MA_ont:MA_Technique
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty ontologies:records ;
+                               owl:onProperty MA_ont:records ;
                                owl:someValuesFrom MA_ont:MA_style
                              ] ;
              rdfs:label "Video" .
@@ -728,7 +727,7 @@ MA_ont:Video rdf:type owl:Class ;
 MA_ont:bodytech rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
+                                  owl:onProperty MA_ont:type_of ;
                                   owl:someValuesFrom MA_ont:Fundamental
                                 ] ;
                 rdfs:label "Body_tech"^^xsd:string .
@@ -738,7 +737,7 @@ MA_ont:bodytech rdf:type owl:Class ;
 MA_ont:footwork rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
+                                  owl:onProperty MA_ont:type_of ;
                                   owl:someValuesFrom MA_ont:Fundamental
                                 ] ;
                 rdfs:label "Footwork" .
@@ -748,7 +747,7 @@ MA_ont:footwork rdf:type owl:Class ;
 MA_ont:handwork rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty ontologies:type_of ;
+                                  owl:onProperty MA_ont:type_of ;
                                   owl:someValuesFrom MA_ont:Fundamental
                                 ] ;
                 rdfs:label "Handwork"^^xsd:string .
@@ -756,9 +755,9 @@ MA_ont:handwork rdf:type owl:Class ;
 
 ###  https://purl.org/maont#ymH_metamotion
 MA_ont:ymH_metamotion rdf:type owl:Class ;
-                      rdfs:subClassOf ontologies:E25_Human-Made_Feature ,
+                      rdfs:subClassOf MA_ont:E25_Human-Made_Feature ,
                                       [ rdf:type owl:Restriction ;
-                                        owl:onProperty ontologies:encodes ;
+                                        owl:onProperty MA_ont:encodes ;
                                         owl:someValuesFrom MA_ont:Fundamental
                                       ] ;
                       rdfs:label "metamotion"^^xsd:string .
