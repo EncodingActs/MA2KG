@@ -10,7 +10,7 @@ The <strong>M</strong>artial <strong>A</strong>rts Ontology (MAont) Version 1.0 
 ##### Version 1.0 [Doc](http://EncodingActs.github.io/doc/MAont/extract.html)
 
 #### /core_ontologies/hkmalakg
-The ontology, devised from MA_ont, is tuned for describing the archival items in the HKMALA.
+The ontology, devised from MA_ont, is tuned for describing the archival items in the *Hong Kong Martial Arts Living Archive* (HKMALA).
 
 ### Knowledge graph (KG) instantiation
 
