@@ -1,4 +1,4 @@
-@prefix MA_ont: <https://purl.org/maont#> .
+@prefix MA_ont: <http://EncodingActs.github.io/MAont/MAont_base#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,9 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
-@base <https://purl.org/maont> .
+@base <http://EncodingActs.github.io/MAont/MAont_base> .
 
-<https://purl.org/maont> rdf:type owl:Ontology .
+<http://EncodingActs.github.io/MAont/MAont_base> rdf:type owl:Ontology .
 
 #################################################################
 #     Title: The Martial Arts ontology: Master Module
@@ -24,29 +24,29 @@
 #    Annotation properties
 #################################################################
 
-###  https://purl.org/maont#name_zhHK
+###  http://EncodingActs.github.io/MAont/MAont_base#name_zhHK
 MA_ont:name_zhHK rdf:type owl:AnnotationProperty ;
                                    rdfs:label "name_zhHK" .
 
 
-###  https://purl.org/maont#BaiduURL
+###  http://EncodingActs.github.io/MAont/MAont_base#BaiduURL
 MA_ont:BaiduURL rdf:type owl:AnnotationProperty ;
                                    rdfs:label "BaiduURL" .
 
 
 
 
-###  https://purl.org/maont#RDs2xTVp0k0L8mGtMLKamua
+###  http://EncodingActs.github.io/MAont/MAont_base#RDs2xTVp0k0L8mGtMLKamua
 MA_ont:RDs2xTVp0k0L8mGtMLKamua rdf:type owl:AnnotationProperty ;
                                    rdfs:label "otherName_en" .
 
 
-###  https://purl.org/maont#otherName_zh
+###  http://EncodingActs.github.io/MAont/MAont_base#otherName_zh
 MA_ont:otherName_zh rdf:type owl:AnnotationProperty ;
                                   rdfs:label "otherName_zh" .
 
 
-###  https://purl.org/maont#wikiURL
+###  http://EncodingActs.github.io/MAont/MAont_base#wikiURL
 MA_ont:wikiURL rdf:type owl:AnnotationProperty ;
                                   rdfs:label "wikiURL"^^xsd:string .
 
@@ -64,217 +64,217 @@ skos:altLabel rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://purl.org/maont#influenced_by
+###  http://EncodingActs.github.io/MAont/MAont_base#influenced_by
 MA_ont:influenced_by rdf:type owl:ObjectProperty ;
                                   rdfs:label "influenced_by" .
 
 
-###  https://purl.org/maont#belongs_to
+###  http://EncodingActs.github.io/MAont/MAont_base#belongs_to
 MA_ont:belongs_to rdf:type owl:ObjectProperty ;
                       rdfs:label "belongs_to" .
 
 
-###  https://purl.org/maont#creates
+###  http://EncodingActs.github.io/MAont/MAont_base#creates
 MA_ont:creates rdf:type owl:ObjectProperty ;
                    rdfs:label "creates" .
 
 
-###  https://purl.org/maont#descendant_of
+###  http://EncodingActs.github.io/MAont/MAont_base#descendant_of
 MA_ont:descendant_of rdf:type owl:ObjectProperty ;
                          rdfs:label "descendant_of"^^xsd:string .
 
 
-###  https://purl.org/maont#describes
+###  http://EncodingActs.github.io/MAont/MAont_base#describes
 MA_ont:describes rdf:type owl:ObjectProperty ;
                      rdfs:label "describes" .
 
 
-###  https://purl.org/maont#detected_in
+###  http://EncodingActs.github.io/MAont/MAont_base#detected_in
 MA_ont:detected_in rdf:type owl:ObjectProperty ;
                        rdfs:label "detected_in" .
 
 
-###  https://purl.org/maont#documents
+###  http://EncodingActs.github.io/MAont/MAont_base#documents
 MA_ont:documents rdf:type owl:ObjectProperty ;
                      rdfs:label "documents" .
 
 
-###  https://purl.org/maont#employs
+###  http://EncodingActs.github.io/MAont/MAont_base#employs
 MA_ont:employs rdf:type owl:ObjectProperty ;
                    rdfs:label "employs" .
 
 
-###  https://purl.org/maont#encodes
+###  http://EncodingActs.github.io/MAont/MAont_base#encodes
 MA_ont:encodes rdf:type owl:ObjectProperty ;
                    rdfs:label "encodes" .
 
 
-###  https://purl.org/maont#has
+###  http://EncodingActs.github.io/MAont/MAont_base#has
 MA_ont:has rdf:type owl:ObjectProperty ;
                rdfs:label "has" .
 
 
-###  https://purl.org/maont#has_feature
+###  http://EncodingActs.github.io/MAont/MAont_base#has_feature
 MA_ont:has_feature rdf:type owl:ObjectProperty ;
                        rdfs:label "has_feature" .
 
 
-###  https://purl.org/maont#has_origin_place
+###  http://EncodingActs.github.io/MAont/MAont_base#has_origin_place
 MA_ont:has_origin_place rdf:type owl:ObjectProperty ;
                             rdfs:label "has_origin_place" .
 
 
-###  https://purl.org/maont#homologous_with
+###  http://EncodingActs.github.io/MAont/MAont_base#homologous_with
 MA_ont:homologous_with rdf:type owl:ObjectProperty ;
                            rdfs:label "homologous_with" .
 
 
-###  https://purl.org/maont#identified_by
+###  http://EncodingActs.github.io/MAont/MAont_base#identified_by
 MA_ont:identified_by rdf:type owl:ObjectProperty ;
                          rdfs:label "identified_by" .
 
 
-###  https://purl.org/maont#is_child_of
+###  http://EncodingActs.github.io/MAont/MAont_base#is_child_of
 MA_ont:is_child_of rdf:type owl:ObjectProperty ;
                        rdfs:label "is_child_of" .
 
 
-###  https://purl.org/maont#is_clan_member_of
+###  http://EncodingActs.github.io/MAont/MAont_base#is_clan_member_of
 MA_ont:is_clan_member_of rdf:type owl:ObjectProperty ;
                              rdfs:label "is_clan_member_of" .
 
 
-###  https://purl.org/maont#is_master_of
+###  http://EncodingActs.github.io/MAont/MAont_base#is_master_of
 MA_ont:is_master_of rdf:type owl:ObjectProperty ;
                         rdfs:label "is_master_of" .
 
 
-###  https://purl.org/maont#is_parent_of
+###  http://EncodingActs.github.io/MAont/MAont_base#is_parent_of
 MA_ont:is_parent_of rdf:type owl:ObjectProperty ;
                         rdfs:label "is_parent_of" .
 
 
-###  https://purl.org/maont#is_student_of
+###  http://EncodingActs.github.io/MAont/MAont_base#is_student_of
 MA_ont:is_student_of rdf:type owl:ObjectProperty ;
                          rdfs:label "is_student_of" .
 
 
-###  https://purl.org/maont#lives_in
+###  http://EncodingActs.github.io/MAont/MAont_base#lives_in
 MA_ont:lives_in rdf:type owl:ObjectProperty ;
                     rdfs:label "lives_in" .
 
 
-###  https://purl.org/maont#located_at
+###  http://EncodingActs.github.io/MAont/MAont_base#located_at
 MA_ont:located_at rdf:type owl:ObjectProperty ;
                       rdfs:label "located_at"^^xsd:string .
 
 
-###  https://purl.org/maont#part_of
+###  http://EncodingActs.github.io/MAont/MAont_base#part_of
 MA_ont:part_of rdf:type owl:ObjectProperty ;
                    rdfs:label "part_of" .
 
 
-###  https://purl.org/maont#performed_by
+###  http://EncodingActs.github.io/MAont/MAont_base#performed_by
 MA_ont:performed_by rdf:type owl:ObjectProperty ;
                         rdfs:label "performed_by" .
 
 
-###  https://purl.org/maont#portrait_of
+###  http://EncodingActs.github.io/MAont/MAont_base#portrait_of
 MA_ont:portrait_of rdf:type owl:ObjectProperty ;
                        rdfs:label "portrait_of" .
 
 
-###  https://purl.org/maont#practiced_in
+###  http://EncodingActs.github.io/MAont/MAont_base#practiced_in
 MA_ont:practiced_in rdf:type owl:ObjectProperty ;
                         rdfs:label "practiced_in" .
 
 
-###  https://purl.org/maont#practices
+###  http://EncodingActs.github.io/MAont/MAont_base#practices
 MA_ont:practices rdf:type owl:ObjectProperty ;
                      rdfs:label "practices" .
 
 
-###  https://purl.org/maont#recognized_in
+###  http://EncodingActs.github.io/MAont/MAont_base#recognized_in
 MA_ont:recognized_in rdf:type owl:ObjectProperty ;
                          rdfs:label "recognized_in" .
 
 
-###  https://purl.org/maont#records
+###  http://EncodingActs.github.io/MAont/MAont_base#records
 MA_ont:records rdf:type owl:ObjectProperty ;
                    rdfs:label "records" .
 
 
-###  https://purl.org/maont#represented_by
+###  http://EncodingActs.github.io/MAont/MAont_base#represented_by
 MA_ont:represented_by rdf:type owl:ObjectProperty ;
                           rdfs:label "represented_by" .
 
 
-###  https://purl.org/maont#requires
+###  http://EncodingActs.github.io/MAont/MAont_base#requires
 MA_ont:requires rdf:type owl:ObjectProperty ;
                     rdfs:label "requires" .
 
 
-###  https://purl.org/maont#resides_in
+###  http://EncodingActs.github.io/MAont/MAont_base#resides_in
 MA_ont:resides_in rdf:type owl:ObjectProperty ;
                       rdfs:label "resides_in" .
 
 
-###  https://purl.org/maont#substyle_of
+###  http://EncodingActs.github.io/MAont/MAont_base#substyle_of
 MA_ont:substyle_of rdf:type owl:ObjectProperty ;
                        rdfs:label "substyle_of" .
 
 
-###  https://purl.org/maont#symbolized_by
+###  http://EncodingActs.github.io/MAont/MAont_base#symbolized_by
 MA_ont:symbolized_by rdf:type owl:ObjectProperty ;
                          rdfs:label "symbolized_by" .
 
 
-###  https://purl.org/maont#taught_at
+###  http://EncodingActs.github.io/MAont/MAont_base#taught_at
 MA_ont:taught_at rdf:type owl:ObjectProperty ;
                      rdfs:label "taught_at"^^xsd:string .
 
 
-###  https://purl.org/maont#taught_by
+###  http://EncodingActs.github.io/MAont/MAont_base#taught_by
 MA_ont:taught_by rdf:type owl:ObjectProperty ;
                      rdfs:label "taught_by"^^xsd:string .
 
 
-###  https://purl.org/maont#teaches
+###  http://EncodingActs.github.io/MAont/MAont_base#teaches
 MA_ont:teaches rdf:type owl:ObjectProperty ;
                    rdfs:label "teaches" .
 
 
-###  https://purl.org/maont#teaches_at
+###  http://EncodingActs.github.io/MAont/MAont_base#teaches_at
 MA_ont:teaches_at rdf:type owl:ObjectProperty ;
                       rdfs:label "teaches_at" .
 
 
-###  https://purl.org/maont#title_of
+###  http://EncodingActs.github.io/MAont/MAont_base#title_of
 MA_ont:title_of rdf:type owl:ObjectProperty ;
                     rdfs:label "title_of" .
 
 
-###  https://purl.org/maont#trains
+###  http://EncodingActs.github.io/MAont/MAont_base#trains
 MA_ont:trains rdf:type owl:ObjectProperty ;
                   rdfs:label "trains" .
 
 
-###  https://purl.org/maont#type_of
+###  http://EncodingActs.github.io/MAont/MAont_base#type_of
 MA_ont:type_of rdf:type owl:ObjectProperty ;
                    rdfs:label "type_of" .
 
 
-###  https://purl.org/maont#uses
+###  http://EncodingActs.github.io/MAont/MAont_base#uses
 MA_ont:uses rdf:type owl:ObjectProperty ;
                 rdfs:label "uses" .
 
 
-###  https://purl.org/maont#valid_for
+###  http://EncodingActs.github.io/MAont/MAont_base#valid_for
 MA_ont:valid_for rdf:type owl:ObjectProperty ;
                      rdfs:label "valid_for" .
 
 
-###  https://purl.org/maont#with
+###  http://EncodingActs.github.io/MAont/MAont_base#with
 MA_ont:with rdf:type owl:ObjectProperty ;
                 rdfs:label "with" .
 
@@ -283,7 +283,7 @@ MA_ont:with rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://purl.org/maont#MAonto_v1
+###  http://EncodingActs.github.io/MAont/MAont_base#MAonto_v1
 MA_ont:MAonto_v1 rdf:type owl:DatatypeProperty .
 
 
@@ -291,7 +291,7 @@ MA_ont:MAonto_v1 rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
-###  https://purl.org/maont#E21_Person
+###  http://EncodingActs.github.io/MAont/MAont_base#E21_Person
 MA_ont:E21_Person rdf:type owl:Class ;
                       rdfs:subClassOf owl:Thing ,
                                       [ rdf:type owl:Restriction ;
@@ -313,50 +313,50 @@ MA_ont:E21_Person rdf:type owl:Class ;
                       rdfs:label "E21. Person" .
 
 
-###  https://purl.org/maont#E22_Man-made_object
+###  http://EncodingActs.github.io/MAont/MAont_base#E22_Man-made_object
 MA_ont:E22_Man-made_object rdf:type owl:Class ;
                                rdfs:label "E22. Man-made Object" .
 
 
-###  https://purl.org/maont#E25_Human-Made_Feature
+###  http://EncodingActs.github.io/MAont/MAont_base#E25_Human-Made_Feature
 MA_ont:E25_Human-Made_Feature rdf:type owl:Class ;
                                   rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E25_Human-Made_Feature> .
 
 
-###  https://purl.org/maont#E31_Document
+###  http://EncodingActs.github.io/MAont/MAont_base#E31_Document
 MA_ont:E31_Document rdf:type owl:Class ;
                         rdfs:subClassOf MA_ont:E73_Information_Object ;
                         rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E31_Document> .
 
 
-###  https://purl.org/maont#E41_Appellation
+###  http://EncodingActs.github.io/MAont/MAont_base#E41_Appellation
 MA_ont:E41_Appellation rdf:type owl:Class ;
                            rdfs:subClassOf MA_ont:E90_Symbolic_Object ;
                            rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E41_Appellation> .
 
 
-###  https://purl.org/maont#E52_Time-Span
+###  http://EncodingActs.github.io/MAont/MAont_base#E52_Time-Span
 MA_ont:E52_Time-Span rdf:type owl:Class ;
                          rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E52_Time-Span> .
 
 
-###  https://purl.org/maont#E53_Place
+###  http://EncodingActs.github.io/MAont/MAont_base#E53_Place
 MA_ont:E53_Place rdf:type owl:Class ;
                      rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E53_Place> .
 
 
-###  https://purl.org/maont#E73_Information_Object
+###  http://EncodingActs.github.io/MAont/MAont_base#E73_Information_Object
 MA_ont:E73_Information_Object rdf:type owl:Class ;
                                   rdfs:label "E73_Information_Object" .
 
 
-###  https://purl.org/maont#E90_Symbolic_Object
+###  http://EncodingActs.github.io/MAont/MAont_base#E90_Symbolic_Object
 MA_ont:E90_Symbolic_Object rdf:type owl:Class ;
                                rdfs:subClassOf MA_ont:E73_Information_Object ;
                                rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E90_Symbolic_Object> .
 
 
-###  https://purl.org/maont#Armament
+###  http://EncodingActs.github.io/MAont/MAont_base#Armament
 MA_ont:Armament rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:E22_Man-made_object ,
                                 [ rdf:type owl:Restriction ;
@@ -366,17 +366,17 @@ MA_ont:Armament rdf:type owl:Class ;
                 rdfs:label "Armament"^^xsd:string .
 
 
-###  https://purl.org/maont#E28_Conceptual_Object
+###  http://EncodingActs.github.io/MAont/MAont_base#E28_Conceptual_Object
 MA_ont:E28_Conceptual_Object rdf:type owl:Class ;
                              rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> .
 
 
-###  https://purl.org/maont#E7_Activity
+###  http://EncodingActs.github.io/MAont/MAont_base#E7_Activity
 MA_ont:E7_Activity rdf:type owl:Class ;
                    rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/E7_Activity> .
 
 
-###  https://purl.org/maont#Fundamental
+###  http://EncodingActs.github.io/MAont/MAont_base#Fundamental
 MA_ont:Fundamental rdf:type owl:Class ;
                    rdfs:subClassOf MA_ont:MA_Technique ,
                                    [ rdf:type owl:Restriction ;
@@ -390,13 +390,13 @@ MA_ont:Fundamental rdf:type owl:Class ;
                    rdfs:label "Fundamental_technique"^^xsd:string .
 
 
-###  https://purl.org/maont#Grading_sys
+###  http://EncodingActs.github.io/MAont/MAont_base#Grading_sys
 MA_ont:Grading_sys rdf:type owl:Class ;
                   rdfs:subClassOf MA_ont:E73_Information_Object ;
                   rdfs:label "Grading_system"^^xsd:string .
 
 
-###  https://purl.org/maont#Image
+###  http://EncodingActs.github.io/MAont/MAont_base#Image
 MA_ont:Image rdf:type owl:Class ;
              rdfs:subClassOf MA_ont:E73_Information_Object ,
                              [ rdf:type owl:Restriction ;
@@ -406,13 +406,13 @@ MA_ont:Image rdf:type owl:Class ;
              rdfs:label "Image" .
 
 
-###  https://purl.org/maont#Jin
+###  http://EncodingActs.github.io/MAont/MAont_base#Jin
 MA_ont:Jin rdf:type owl:Class ;
            rdfs:subClassOf MA_ont:Fundamental ;
            rdfs:comment "the physical strength and quality of force" .
 
 
-###  https://purl.org/maont#MA_Technique
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_Technique
 MA_ont:MA_Technique rdf:type owl:Class ;
                     rdfs:subClassOf MA_ont:P33_used_specific_technique ,
                                     [ rdf:type owl:Restriction ;
@@ -442,17 +442,17 @@ MA_ont:MA_Technique rdf:type owl:Class ;
                     rdfs:label "MA_Technique" .
 
 
-###  https://purl.org/maont#MA_book
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_book
 MA_ont:MA_book rdf:type owl:Class ;
                rdfs:subClassOf MA_ont:E31_Document ;
                rdfs:label "MA_book"^^xsd:string .
 
 
-###  https://purl.org/maont#MA_institute
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_institute
 MA_ont:MA_institute rdf:type owl:Class .
 
 
-###  https://purl.org/maont#MA_style
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_style
 MA_ont:MA_style rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
                                 [ rdf:type owl:Restriction ;
@@ -478,7 +478,7 @@ MA_ont:MA_style rdf:type owl:Class ;
                 rdfs:label "MA_style"^^xsd:string .
 
 
-###  https://purl.org/maont#MA_syllabus
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_syllabus
 MA_ont:MA_syllabus rdf:type owl:Class ;
                    rdfs:subClassOf MA_ont:E73_Information_Object ,
                                    [ rdf:type owl:Restriction ;
@@ -492,7 +492,7 @@ MA_ont:MA_syllabus rdf:type owl:Class ;
                    rdfs:label "MA_syllabus"^^xsd:string .
 
 
-###  https://purl.org/maont#MA_system
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_system
 MA_ont:MA_system rdf:type owl:Class ;
                  rdfs:subClassOf MA_ont:E28_Conceptual_Object ,
                                  [ rdf:type owl:Restriction ;
@@ -502,7 +502,7 @@ MA_ont:MA_system rdf:type owl:Class ;
                  rdfs:label <http://semanticweb.org/ont/martialmotion#MA_system> .
 
 
-###  https://purl.org/maont#MA_taolu
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_taolu
 MA_ont:MA_taolu rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:MA_training_method ,
                                 [ rdf:type owl:Restriction ;
@@ -522,7 +522,7 @@ MA_ont:MA_taolu rdf:type owl:Class ;
                               "form"@en .
 
 
-###  https://purl.org/maont#MA_training_method
+###  http://EncodingActs.github.io/MAont/MAont_base#MA_training_method
 MA_ont:MA_training_method rdf:type owl:Class ;
                           rdfs:subClassOf owl:Thing ,
                                           [ rdf:type owl:Restriction ;
@@ -548,7 +548,7 @@ MA_ont:MA_training_method rdf:type owl:Class ;
                           rdfs:label "Training_method"^^xsd:string .
 
 
-###  https://purl.org/maont#Martial_arts
+###  http://EncodingActs.github.io/MAont/MAont_base#Martial_arts
 MA_ont:Martial_arts rdf:type owl:Class ;
                     rdfs:subClassOf MA_ont:E7_Activity ,
                                     [ rdf:type owl:Restriction ;
@@ -580,7 +580,7 @@ MA_ont:Martial_arts rdf:type owl:Class ;
                                   "武术"@zh-cn .
 
 
-###  https://purl.org/maont#Master
+###  http://EncodingActs.github.io/MAont/MAont_base#Master
 MA_ont:Master rdf:type owl:Class ;
               rdfs:subClassOf MA_ont:E21_Person ,
                               [ rdf:type owl:Restriction ;
@@ -647,7 +647,7 @@ MA_ont:Master rdf:type owl:Class ;
                          "MA_master"^^xsd:string .
 
 
-###  https://purl.org/maont#MoCap
+###  http://EncodingActs.github.io/MAont/MAont_base#MoCap
 MA_ont:MoCap rdf:type owl:Class ;
              rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
@@ -665,23 +665,23 @@ MA_ont:MoCap rdf:type owl:Class ;
              rdfs:label "Motion_capture" .
 
 
-###  https://purl.org/maont#P33_used_specific_technique
+###  http://EncodingActs.github.io/MAont/MAont_base#P33_used_specific_technique
 MA_ont:P33_used_specific_technique rdf:type owl:Class ;
                                    rdfs:label <http://cidoc-crm.org/cidoc-crm/7.1.1/P33_used_specific_technique> .
 
 
-###  https://purl.org/maont#Sparring
+###  http://EncodingActs.github.io/MAont/MAont_base#Sparring
 MA_ont:Sparring rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:MA_training_method .
 
 
-###  https://purl.org/maont#Strength_training
+###  http://EncodingActs.github.io/MAont/MAont_base#Strength_training
 MA_ont:Strength_training rdf:type owl:Class ;
                          rdfs:subClassOf MA_ont:MA_training_method ;
                          rdfs:label "Strength_training" .
 
 
-###  https://purl.org/maont#Texts
+###  http://EncodingActs.github.io/MAont/MAont_base#Texts
 MA_ont:Texts rdf:type owl:Class ;
              rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
@@ -691,7 +691,7 @@ MA_ont:Texts rdf:type owl:Class ;
              rdfs:label "Text_doc" .
 
 
-###  https://purl.org/maont#Training_tool
+###  http://EncodingActs.github.io/MAont/MAont_base#Training_tool
 MA_ont:Training_tool rdf:type owl:Class ;
                      rdfs:subClassOf MA_ont:E22_Man-made_object ,
                                      [ rdf:type owl:Restriction ;
@@ -705,7 +705,7 @@ MA_ont:Training_tool rdf:type owl:Class ;
                      rdfs:label "Trainig_tool"^^xsd:string .
 
 
-###  https://purl.org/maont#Video
+###  http://EncodingActs.github.io/MAont/MAont_base#Video
 MA_ont:Video rdf:type owl:Class ;
              rdfs:subClassOf MA_ont:E31_Document ,
                              [ rdf:type owl:Restriction ;
@@ -723,7 +723,7 @@ MA_ont:Video rdf:type owl:Class ;
              rdfs:label "Video" .
 
 
-###  https://purl.org/maont#bodytech
+###  http://EncodingActs.github.io/MAont/MAont_base#bodytech
 MA_ont:bodytech rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
@@ -733,7 +733,7 @@ MA_ont:bodytech rdf:type owl:Class ;
                 rdfs:label "Body_tech"^^xsd:string .
 
 
-###  https://purl.org/maont#footwork
+###  http://EncodingActs.github.io/MAont/MAont_base#footwork
 MA_ont:footwork rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
@@ -743,7 +743,7 @@ MA_ont:footwork rdf:type owl:Class ;
                 rdfs:label "Footwork" .
 
 
-###  https://purl.org/maont#handwork
+###  http://EncodingActs.github.io/MAont/MAont_base#handwork
 MA_ont:handwork rdf:type owl:Class ;
                 rdfs:subClassOf MA_ont:Fundamental ,
                                 [ rdf:type owl:Restriction ;
@@ -753,7 +753,7 @@ MA_ont:handwork rdf:type owl:Class ;
                 rdfs:label "Handwork"^^xsd:string .
 
 
-###  https://purl.org/maont#ymH_metamotion
+###  http://EncodingActs.github.io/MAont/MAont_base#ymH_metamotion
 MA_ont:ymH_metamotion rdf:type owl:Class ;
                       rdfs:subClassOf MA_ont:E25_Human-Made_Feature ,
                                       [ rdf:type owl:Restriction ;
