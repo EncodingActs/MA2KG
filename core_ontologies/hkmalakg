@@ -6,7 +6,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ontologies: <http://www.semanticweb.org/yumeng/ontologies/2021/> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
 @base <https://purl.org/maont/master> .
 
@@ -514,7 +513,7 @@ martialmotion:MA_system rdf:type owl:Class ;
 ###  http://semanticweb.org/ont/martialmotion#Master
 martialmotion:Master rdf:type owl:Class ;
                      owl:equivalentClass MA_ont:Master ;
-                     rdfs:subClassOf ontologies:E21_Person .
+                     rdfs:subClassOf MA_ont:E21_Person .
 
 
 ###  http://semanticweb.org/ont/martialmotion#Melee_weapon
@@ -539,7 +538,7 @@ martialmotion:Ranged_weapon rdf:type owl:Class ;
 
 ###  http://semanticweb.org/ont/martialmotion#Region
 martialmotion:Region rdf:type owl:Class ;
-                     rdfs:subClassOf ontologies:E53_Place ;
+                     rdfs:subClassOf MA_ont:E53_Place ;
                      owl:disjointWith hkmalakg:Site .
 
 
@@ -636,7 +635,7 @@ hkmalakg:Association rdf:type owl:Class ;
 
 ###  https://purl.org/maont/master#City
 hkmalakg:City rdf:type owl:Class ;
-              rdfs:subClassOf ontologies:E53_Place ;
+              rdfs:subClassOf MA_ont:E53_Place ;
               owl:disjointWith hkmalakg:Site .
 
 
@@ -652,7 +651,7 @@ hkmalakg:School_and_Club rdf:type owl:Class ;
 
 ###  https://purl.org/maont/master#Site
 hkmalakg:Site rdf:type owl:Class ;
-              rdfs:subClassOf ontologies:E53_Place .
+              rdfs:subClassOf MA_ont:E53_Place .
 
 
 ###  https://purl.org/maont/master#Temple_and_Sect
