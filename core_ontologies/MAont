@@ -1,4 +1,4 @@
-@prefix : <https://purl.org/maont> .
+@prefix : <https://purl.org/maont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +8,7 @@
 @prefix MA_ont: <https://purl.org/maont#> .
 @prefix ontologies: <https://purl.org/maont#> .
 @prefix martialmotion: <http://semanticweb.org/ont/martialmotion#> .
-@base <http://EncodingActs.github.io/MAont/MAont_base> .
+@base <https://purl.org/maont> .
 
 <https://purl.org/maont> rdf:type owl:Ontology .
 
