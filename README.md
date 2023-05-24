@@ -7,9 +7,8 @@ This project contains the core ontologies, RDF resouces and scripts used for dev
 #### /core_ontologies/MAont
 
 The <strong>M</strong>artial <strong>A</strong>rt <strong>On</strong>tology (MAon) describes martial arts as an entity of embodied knowledge with a conceptual space incorporating three dimensions: the kinesthetic, stylistic, and social dimensions. 
-The <strong>MAon Version 1.1 </strong>, extended from its [basis](https://github.com/renie26/ont), accentuates the role of <b>people</b> in transmitting and (re)developing different styles and expands the <b>Master</b> module accordingly.
-    
-##### Version 1.1 [Doc](https://purl.org/maont/techCorpus)
+The <strong>MAon Version 1.1 </strong> ([Doc](https://purl.org/maont/techCorpus)), extended from its [basis](https://github.com/renie26/ont), accentuates the role of <b>people</b> in transmitting and (re)developing different styles and expands the <b>Master</b> module accordingly.
+
 
 #### /core_ontologies/hkmalakg
 The ontology, devised from MAon, is tuned for describing the archival items in the *Hong Kong Martial Arts Living Archive* (HKMALA).
