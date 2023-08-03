@@ -1,6 +1,6 @@
 ## MA<sup>2</sup>KG & MAon
 
-This project contains the core ontologies, RDF resouces and scripts used for developing the <strong>M</strong>artial <strong>A</strong>rts <strong>MA</strong>sters <strong>K</strong>nowledge <strong>G</strong>raph (MA<sup>2</sup>KG).
+This project contains the core ontologies, RDF resouces and scripts used for developing the <strong>M</strong>artial <strong>A</strong>rt <strong>MA</strong>sters <strong>K</strong>nowledge <strong>G</strong>raph (MA<sup>2</sup>KG).
 [![DOI](https://zenodo.org/badge/547032994.svg)](https://zenodo.org/badge/latestdoi/547032994)
 
 ### Ontologies
@@ -19,7 +19,7 @@ The ontology, devised from MAon, is tuned for describing the archival items in t
 #### /rdf/hkmalakg_wiki.ttl
 
 This file contains the master-centric RDF instantiation for the MA<sup>2</sup>KG, by integrating data from multiple, multilingual sources, e.g., *Wikidata*, *Baidu Baike*, the *Hong Kong Martial Arts Living Archive*, and manual annotations. Data acquisition was performed based on the MAon ontological framework. 
-##### Martial Arts MAsters Knowledge Graph (MA2KG) Version 1.0 [Doc](https://EncodingActs.github.io/doc/MA2KG/extract.html)
+##### Martial Art MAsters Knowledge Graph (MA2KG) Version 1.0 [Doc](https://EncodingActs.github.io/doc/MA2KG/extract.html)
 
 ### Scripts
 
