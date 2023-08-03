@@ -1,4 +1,4 @@
-## MA<sup>2</sup>KG & MAont
+## MA<sup>2</sup>KG & MAon
 
 This project contains the core ontologies, RDF resouces and scripts used for developing the <strong>M</strong>artial <strong>A</strong>rts <strong>MA</strong>sters <strong>K</strong>nowledge <strong>G</strong>raph (MA<sup>2</sup>KG).
 
@@ -6,20 +6,19 @@ This project contains the core ontologies, RDF resouces and scripts used for dev
 
 #### /core_ontologies/MAont
 
-The <strong>M</strong>artial <strong>A</strong>rts Ontology (MAont) describes martial arts as an entity of embodied knowledge with a conceptual space incorporating three dimensions: the kinesthetic, stylistic, and social dimensions. 
-The <strong>MAont Version 1.0 </strong>, extended from its [basis](https://github.com/renie26/ont), accentuates the role of <b>people</b> in transmitting and (re)developing different styles and expands the <b>Master</b> module accordingly.
-    
-##### Version 1.0 [Doc](http://EncodingActs.github.io/doc/MAont/extract.html)
+The <strong>M</strong>artial <strong>A</strong>rt <strong>On</strong>tology (MAon) describes martial arts as an entity of embodied knowledge with a conceptual space incorporating three dimensions: the kinesthetic, stylistic, and social dimensions. 
+The <strong>MAon Version 1.1 </strong> ([Doc](https://purl.org/maont/techCorpus)), extended from its [basis](https://github.com/renie26/ont), accentuates the role of <b>people</b> in transmitting and (re)developing different styles and expands the <b>Master</b> module accordingly.
+
 
 #### /core_ontologies/hkmalakg
-The ontology, devised from MA_ont, is tuned for describing the archival items in the *Hong Kong Martial Arts Living Archive* (HKMALA).
+The ontology, devised from MAon, is tuned for describing the archival items in the *Hong Kong Martial Arts Living Archive* (HKMALA).
 
 ### Knowledge graph (KG) instantiation
 
 #### /rdf/hkmalakg_wiki.ttl
 
-This file contains the master-centric RDF instantiation for the MA<sup>2</sup>KG, by integrating data from multiple, multilingual sources, e.g., *Wikidata*, *Baidu Baike*, the *Hong Kong Martial Arts Living Archive*, and manual annotations. Data acquisition was performed based on the **MAont** ontological framework. 
-##### Version 1.0 [Doc](http://EncodingActs.github.io/doc/MA2KG/extract.html)
+This file contains the master-centric RDF instantiation for the MA<sup>2</sup>KG, by integrating data from multiple, multilingual sources, e.g., *Wikidata*, *Baidu Baike*, the *Hong Kong Martial Arts Living Archive*, and manual annotations. Data acquisition was performed based on the MAon ontological framework. 
+##### Martial Arts MAsters Knowledge Graph (MA2KG) Version 1.0 [Doc](https://EncodingActs.github.io/doc/MA2KG/extract.html)
 
 ### Scripts
 
@@ -33,3 +32,4 @@ This folder contains the technical details with ready-to-use scripts for re-prod
 
 ### License
 This project is licensed under the terms of the MIT license.
+
