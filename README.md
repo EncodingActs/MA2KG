@@ -26,5 +26,9 @@ This file contains the master-centric RDF instantiation for the MA<sup>2</sup>KG
 #### /scripts
 This folder contains the technical details with ready-to-use scripts for re-producing the KG construction acquisition and inference process. 
 
+### Dataset creators
+[Lin Yuan](https://people.epfl.ch/lin.yuan/?lang=en) (Investigation, Transcription, Implementation).
+[Yumeng Hou](https://renie26.github.io/homepage.github.io/) (Design, Transcription, Organisation, Supervision).
+
 ### License
 This project is licensed under the terms of the MIT license.
