@@ -28,6 +28,7 @@ This folder contains the technical details with ready-to-use scripts for re-prod
 
 ### Dataset creators
 [Lin Yuan](https://people.epfl.ch/lin.yuan/?lang=en) (Investigation, Transcription, Implementation).
+
 [Yumeng Hou](https://renie26.github.io/homepage.github.io/) (Design, Transcription, Organisation, Supervision).
 
 ### License
