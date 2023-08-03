@@ -1,7 +1,7 @@
 ## MA<sup>2</sup>KG & MAon
 
 This project contains the core ontologies, RDF dataset and scripts used for developing the <strong>M</strong>artial <strong>A</strong>rt <strong>MA</strong>sters <strong>K</strong>nowledge <strong>G</strong>raph (MA<sup>2</sup>KG).
-[![DOI](https://zenodo.org/badge/547032994.svg)](https://zenodo.org/badge/latestdoi/547032994)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8211203.svg)](https://doi.org/10.5281/zenodo.8211203)
 
 ### Ontologies
 
